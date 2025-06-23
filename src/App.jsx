@@ -5,7 +5,7 @@ import HomePage from "./Pages/HomePage";
 import Services from "./Pages/Services";
 import Gallery from "./Pages/Gallery";
 
-import Nav from "./Components/Home components/Nav";
+import Nav from "./Components/HomeComponents/Nav";
 import About from "./Pages/About";
 
 function App() {

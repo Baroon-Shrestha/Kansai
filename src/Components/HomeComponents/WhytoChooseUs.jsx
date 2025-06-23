@@ -1,5 +1,5 @@
 import React from "react";
-import WhyChooseUSGrid from "../Helper components/WhyChooseUSGrid";
+import WhyChooseUSGrid from "../HelperComponents/WhyChooseUSGrid";
 
 export default function WhytoChooseUs() {
   return (

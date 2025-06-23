@@ -1,5 +1,5 @@
 import React from "react";
-import ServicesGrid from "../Helper components/ServicesGrid";
+import ServicesGrid from "../HelperComponents/ServicesGrid";
 
 export default function Services() {
   return (

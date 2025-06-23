@@ -1,5 +1,5 @@
 import React from "react";
-import Carousel from "../Helper components/carousel";
+import Carousel from "../HelperComponents/carousel";
 
 export default function Team() {
   return (
