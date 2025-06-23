@@ -1,5 +1,5 @@
 import React from "react";
 
-export default function AboutUS() {
+export default function About() {
   return <div className="my-20">AboutUS</div>;
 }
