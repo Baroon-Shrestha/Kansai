@@ -4,13 +4,14 @@ import Footer from "./Components/Footer";
 import HomePage from "./Pages/HomePage";
 import Services from "./Pages/Services";
 import Gallery from "./Pages/Gallery";
-import Navbar from "./Components/navbar";
 import AboutUS from "./Pages/AboutUS";
+
+import Nav from "./Components/Home components/Nav";
 
 function App() {
   return (
     <>
-      <Navbar />
+      <Nav />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutUS />} />
