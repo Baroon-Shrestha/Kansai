@@ -88,11 +88,12 @@ export default function Team() {
 
   return (
     <>
-      <div className="container mx-auto py-20">
-        <div className="text-xl sm:text-2xl md:text-3xl font-light text-[#701919]">
-          Our Team
+      <div className="container mx-auto pb-20">
+        <div className="mb-4 text-center">
+          <span className="text-[#701919] font-medium text-sm tracking-wide uppercase">
+            Our Team
+          </span>
         </div>
-        <div className="bg-[#D1863C] mt-2 w-12 sm:w-16 md:w-20 h-1 rounded-full"></div>
         <div className="flex items-center flex-col gap-6">
           <div className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#701919]">
             Meet Our Team
@@ -169,20 +170,6 @@ export default function Team() {
                   </div>
                 </div>
               ))}
-            </div>
-
-            {/* Scroll Indicator */}
-            <div className="flex justify-center mt-6">
-              <div className="flex gap-2">
-                {Array.from({ length: Math.ceil(teamMembers.length / 3) }).map(
-                  (_, index) => (
-                    <div
-                      key={index}
-                      className="w-2 h-2 rounded-full bg-gray-300 transition-colors duration-200"
-                    />
-                  )
-                )}
-              </div>
             </div>
           </div>
         </div>

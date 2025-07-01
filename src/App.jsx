@@ -7,6 +7,7 @@ import Gallery from "./Pages/Gallery";
 
 import Nav from "./Components/HomeComponents/Nav";
 import About from "./Pages/About";
+import Contact from "./Pages/Contact";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />
         <Route path="/gallery" element={<Gallery />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
     </>

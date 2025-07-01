@@ -1,27 +1,27 @@
 import React, { useState, useEffect, useRef } from "react";
-import school from "../../assets/school.jpg";
+import school from "../../../assets/school.jpg";
 
-export default function Introduction() {
+export default function WhoAreWe() {
   const [isVisible, setIsVisible] = useState(false);
   const [activeTab, setActiveTab] = useState(0);
   const sectionRef = useRef(null);
 
   const tabs = [
-    { title: "Our Mission", icon: "🎯" },
-    { title: "Our Approach", icon: "📚" },
+    { title: "Our Aims", icon: "🎯" },
+    { title: "Our Objective", icon: "📚" },
     { title: "Our Success", icon: "🏆" },
   ];
 
   const tabContent = [
     {
-      title: "Empowering Global Communication",
+      title: "Our Aim",
       content:
-        "At Kansai International Japanese Language Center, we believe language is the bridge to understanding. Our mission is to provide comprehensive, culturally-rich Japanese language education that empowers students to connect authentically with Japanese society, business, and culture.",
+        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam est obcaecati reiciendis? Aperiam, esse, repellendus necessitatibus id perferendis hic facilis velit nisi rem nostrum fugiat, autem minima molestias illum voluptatem.",
     },
     {
-      title: "Immersive Learning Experience",
+      title: "Our Objective",
       content:
-        "Our innovative teaching methodology combines traditional Japanese pedagogical approaches with modern interactive techniques. We focus on practical communication skills, cultural immersion, and real-world application to ensure our students develop both linguistic competence and cultural fluency.",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error doloremque, deserunt praesentium harum repudiandae dolorem sint consequuntur nostrum consequatur quod earum eligendi, exercitationem qui vero voluptate iusto a delectus aliquid!",
     },
     {
       title: "Proven Track Record",
@@ -59,39 +59,58 @@ export default function Introduction() {
       ref={sectionRef}
       className="py-20 bg-gradient-to-b from-gray-50 to-white relative overflow-hidden"
     >
-      {/* Background Decorative Elements */}
+      {/* Decorative Background */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-1/4 -right-32 w-64 h-64 bg-gradient-to-l from-blue-100 to-transparent rounded-full opacity-60"></div>
         <div className="absolute bottom-1/4 -left-32 w-64 h-64 bg-gradient-to-r from-purple-100 to-transparent rounded-full opacity-60"></div>
       </div>
 
-      <div className="container mx-auto relative z-10">
-        <div className="text-xl sm:text-2xl md:text-3xl font-light text-[#701919]">
-          Who Are We
+      <div
+        className={`container mx-auto relative z-10 transition-all duration-1000 ${
+          isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+        }`}
+      >
+        <div className="mb-4 text-center">
+          <span className="text-[#701919] font-medium text-sm tracking-wide uppercase">
+            Who Are We?
+          </span>
         </div>
-        <div className="bg-[#D1863C] mt-2 w-12 sm:w-16 md:w-20 h-1 rounded-full"></div>
-        {/* Header Section */}
+
+        {/* Section Title */}
         <div
-          className={`text-center mb-16 transition-all duration-1000 ${
+          className={`text-center mb-4 transition-all duration-1000 delay-[100ms] ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
         >
-          <h2 className="text-4xl sm:text-5xl md:text-5xl font-black mb-6">
-            <span className="bg-[#701919]  text-transparent bg-clip-text">
-              Kansai International
-            </span>
-            <span className="block mt-2 bg-[#701919] text-transparent bg-clip-text">
-              Japanese Language Center
+          <h2 className="text-4xl sm:text-5xl font-black mb-6">
+            <span className="bg-[#701919] text-transparent bg-clip-text">
+              Who Are We?
             </span>
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-[#701919] to-[#D1863C] mx-auto rounded-full"></div>
         </div>
 
-        {/* Main Content Grid */}
+        {/* Description Paragraph */}
+        <div
+          className={`flex items-center justify-center mb-16 transition-all duration-1000 delay-[200ms] ${
+            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+          }`}
+        >
+          <p className="max-w-4xl text-center text-lg font-extralight">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi
+            animi perferendis debitis. Deserunt, vitae laboriosam suscipit sequi
+            voluptates asperiores molestiae dolores, illum quae sapiente eius,
+            pariatur aliquid facilis sed aliquam! Error ratione doloribus minus
+            eaque iure laborum sunt modi voluptatum rem, aut dolor maxime fugiat
+            dolores laboriosam non. Minima, incidunt.
+          </p>
+        </div>
+
+        {/* Grid Section */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          {/* Left Side - Interactive Content */}
+          {/* Left Side: Tabs + Content + Features */}
           <div
-            className={`space-y-8 transition-all duration-1000 delay-300 ${
+            className={`space-y-8 transition-all duration-1000 delay-[300ms] ${
               isVisible
                 ? "opacity-100 translate-x-0"
                 : "opacity-0 -translate-x-8"
@@ -128,8 +147,8 @@ export default function Introduction() {
               </div>
             </div>
 
-            {/* Key Features */}
-            <div className="grid grid-cols-2 gap-4">
+            {/* Feature Cards */}
+            <div className="grid grid-cols-2 gap-4 transition-all duration-1000 delay-[400ms]">
               <div className="bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-xl">
                 <div className="text-2xl mb-2">📅</div>
                 <div className="font-bold text-blue-800">Flexible Schedule</div>
@@ -145,33 +164,28 @@ export default function Introduction() {
             </div>
           </div>
 
-          {/* Right Side - Visual Content */}
+          {/* Right Side: Image + Stats */}
           <div
-            className={`transition-all duration-1000 delay-500 ${
+            className={`transition-all duration-1000 delay-[500ms] ${
               isVisible
                 ? "opacity-100 translate-x-0"
                 : "opacity-0 translate-x-8"
             }`}
           >
             <div className="relative max-w-sm sm:max-w-md lg:max-w-lg mx-auto">
-              {/* Main Image Container */}
+              {/* Image Box */}
               <div className="relative overflow-hidden rounded-3xl shadow-2xl bg-gradient-to-br from-blue-100 to-purple-100">
-                {/* Image Placeholder */}
                 <div className="aspect-[3/4] sm:aspect-[4/5] flex items-center justify-center bg-gradient-to-r from-[#701919] to-[#D1863C]">
                   <img
                     src={school}
-                    alt=""
+                    alt="Classroom"
                     className="w-full h-full object-cover"
                   />
                 </div>
 
-                {/* Overlay Content */}
+                {/* Overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end">
                   <div className="p-6 sm:p-8 text-white">
-                    <div className="flex items-center gap-2 mb-2">
-                      {/* <span className="text-yellow-400">⭐</span>
-                      <span className="font-bold">4.9/5 Rating</span> */}
-                    </div>
                     <p className="text-sm opacity-90">
                       Trusted by 200+ international students
                     </p>
@@ -179,8 +193,8 @@ export default function Introduction() {
                 </div>
               </div>
 
-              {/* Floating Statistics Cards */}
-              <div className="absolute -top-4 sm:-top-6 right-4 sm:right-6 bg-white rounded-2xl p-3 sm:p-4 shadow-xl border border-gray-100">
+              {/* Floating Stat Cards */}
+              <div className="absolute -top-4 sm:-top-6 right-4 sm:right-6 bg-white rounded-2xl p-3 sm:p-4 shadow-xl border border-gray-100 transition-all duration-1000 delay-[600ms]">
                 <div className="text-center">
                   <div className="text-xl sm:text-2xl font-bold text-green-600">
                     98%
@@ -189,7 +203,7 @@ export default function Introduction() {
                 </div>
               </div>
 
-              <div className="absolute -bottom-4 sm:-bottom-6 right-4 sm:right-6 bg-white rounded-2xl p-3 sm:p-4 shadow-xl border border-gray-100">
+              <div className="absolute -bottom-4 sm:-bottom-6 right-4 sm:right-6 bg-white rounded-2xl p-3 sm:p-4 shadow-xl border border-gray-100 transition-all duration-1000 delay-[700ms]">
                 <div className="text-center">
                   <div className="text-xl sm:text-2xl font-bold text-blue-600">
                     15+

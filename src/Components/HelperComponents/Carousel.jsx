@@ -47,7 +47,7 @@ const teamMembers = [
   },
 ];
 
-export default function TeamCarousel() {
+export default function Carousel() {
   const scrollRef = useRef();
   const [canScrollLeft, setCanScrollLeft] = useState(false);
   const [canScrollRight, setCanScrollRight] = useState(true);

@@ -28,10 +28,11 @@ export default function Visitus() {
     <>
       <div className="bg-[#FFF8F0] overflow-hidden">
         <div className="container mx-auto px-4 py-20 mb-20">
-          <div className="text-xl sm:text-2xl md:text-3xl font-light text-[#701919]">
-            visit Us
+          <div className="mb-4 text-center">
+            <span className="text-[#701919] font-medium text-sm tracking-wide uppercase">
+              Visit Us
+            </span>
           </div>
-          <div className="bg-[#D1863C] mt-2 w-12 sm:w-16 md:w-20 h-1 rounded-full"></div>
           <div className="capitalize text-2xl sm:text-3xl md:text-4xl font-extrabold mb-12 text-center">
             Contact Us or visit Us
           </div>
