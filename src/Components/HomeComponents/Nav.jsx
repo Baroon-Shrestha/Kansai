@@ -6,6 +6,7 @@ import {
   ChevronDown,
   Settings,
   Image,
+  PhoneCallIcon,
 } from "lucide-react";
 import React, { useState, useEffect } from "react";
 import { NavLink, useLocation } from "react-router-dom";
@@ -34,6 +35,7 @@ export default function Nav() {
     { path: "/about", label: "About Us", icon: Users },
     { path: "/services", label: "Services", icon: Settings },
     { path: "/gallery", label: "Gallery", icon: Image },
+    { path: "/contact", label: "Contact", icon: PhoneCallIcon },
   ];
 
   return (

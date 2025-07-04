@@ -49,6 +49,11 @@ export default function ServiceFlow() {
   return (
     <section className="py-16 bg-gray-100 px-6 relative overflow-hidden">
       <div className="max-w-6xl mx-auto relative z-10">
+        <div className="mb-4 text-center">
+          <span className="text-[#701919] font-medium text-sm tracking-wide uppercase">
+            WorkFlow
+          </span>
+        </div>
         <h2 className="text-3xl md:text-4xl font-bold text-red-800 mb-8 md:mb-16 text-center">
           How We Work?
         </h2>
@@ -108,7 +113,7 @@ export default function ServiceFlow() {
                 </div>
 
                 {/* Step number circle */}
-                <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 z-20">
+                <div className="absolute -top-8 right-0 transform -translate-x-1/2 z-20">
                   <div className="w-16 h-16 rounded-full bg-white flex items-center justify-center font-extrabold text-2xl shadow-lg ">
                     {index + 1}
                   </div>
@@ -118,7 +123,7 @@ export default function ServiceFlow() {
           </div>
 
           {/* Vertical connecting line from step 3 to step 4 */}
-          <div className="absolute right-1/6 top-50 w-0.5 h-24 bg-gradient-to-b from-red-800 to-orange-500 transform translate-x-1/2"></div>
+          <div className="absolute right-1/6 top-52 w-0.5 h-30 bg-gradient-to-b from-red-800 to-orange-500 transform translate-x-1/2"></div>
 
           {/* Bottom row - steps 6, 5, 4 (reversed order) */}
           <div className="grid grid-cols-3 gap-8 relative">
@@ -146,7 +151,7 @@ export default function ServiceFlow() {
                     </div>
 
                     {/* Step number circle */}
-                    <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 z-20">
+                    <div className="absolute -top-8 right-0 transform -translate-x-1/2 z-20">
                       <div className="w-16 h-16 rounded-full bg-white flex items-center justify-center font-extrabold text-2xl shadow-lg ">
                         {originalIndex + 1}
                       </div>

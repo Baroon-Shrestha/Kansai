@@ -1,5 +1,6 @@
 import React from "react";
 import Carousel from "../../HelperComponents/Carousel";
+import { ArrowRight } from "lucide-react";
 
 export default function Team() {
   return (

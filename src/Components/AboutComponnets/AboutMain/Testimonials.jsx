@@ -5,7 +5,7 @@ const data = [
   {
     name: "Aayush Tamang",
     feedback:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam ea quibusdam iusto dolore deleniti, nam repellat vitae repudiandae libero. Consectetur mollitia esse saepe, nisi debitis rerum quae magni rem dolor blanditiis nemo non? Ipsum tempora, exercitationem provident tempore vitae perferendis?",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam ea quibusdam iusto dolore deleniti, nam repellat vitae repudiandae libero. Consectetur mollitia esse saepe, nisi debitis rerum quae magni rem dolor blanditiis nemo non? Ipsum tempora,?",
     rating: 5,
     location: "Tokyo, Japan",
     course: "Computer Science",
@@ -13,7 +13,7 @@ const data = [
   {
     name: "Rashmi Karki",
     feedback:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate eveniet iure totam sapiente cumque ea modi doloribus dignissimos, exercitationem necessitatibus fuga? Inventore provident corporis quis eaque natus fugit repudiandae expedita?",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate eveniet iure totam sapiente cumque ea modi doloribus dignissimos, exercitationem necessitatibus fuga? Inventore provident ",
     rating: 4,
     location: "Osaka, Japan",
     course: "Business Administration",
@@ -21,7 +21,7 @@ const data = [
   {
     name: "Sagar Thapa",
     feedback:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis, maiores similique inventore deserunt delectus libero assumenda, placeat expedita magni quaerat illum blanditiis odio consectetur possimus!",
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis, maiores similique inventore deserunt delectus libero assumenda, placeat expedita magni quaerat illum blanditiis ",
     rating: 5,
     location: "Kyoto, Japan",
     course: "Engineering",
@@ -61,9 +61,10 @@ export default function Testimonials() {
         <div className="mb-16 flex flex-col sm:flex-row items-center justify-between gap-6 sm:gap-0 text-left sm:text-center">
           {/* Heading Texts */}
           <div className="flex-1 text-left">
-            <div className="inline-flex items-center gap-2 bg-gradient-to-r from-[#701919] to-[#D1863C] text-white text-sm font-semibold px-4 py-2 rounded-full mb-4 shadow-lg">
-              <Star size={16} fill="currentColor" />
-              Student Success Stories
+            <div className="mb-4">
+              <span className="text-[#701919] font-medium text-sm tracking-wide uppercase">
+                Testimonials
+              </span>
             </div>
             <h2 className="text-4xl sm:text-5xl font-bold bg-gradient-to-r from-[#701919] to-[#D1863C] bg-clip-text text-transparent mb-2">
               What Our Students Say
@@ -93,7 +94,7 @@ export default function Testimonials() {
 
         {/* Enhanced carousel container */}
         <div
-          className="relative max-w-4xl mx-auto"
+          className="relative max-w-5xl mx-auto"
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
         >
@@ -110,8 +111,7 @@ export default function Testimonials() {
                     : "opacity-0 translate-x-full absolute inset-0"
                 }`}
               >
-                <div className="bg-white rounded-3xl shadow-2xl p-10 mx-10 my-2 relative overflow-hidden group hover:shadow-3xl transition-all duration-500">
-                  {/* Decorative gradient overlay */}
+                <div className="bg-white rounded-3xl shadow-2xl py-10 px-2 mx-4 my-2 relative overflow-hidden group hover:shadow-3xl transition-all duration-500">
                   <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#701919] to-[#D1863C]"></div>
 
                   {/* Quote icon */}
@@ -119,27 +119,10 @@ export default function Testimonials() {
                     <Quote size={64} className="text-[#701919]" />
                   </div>
 
-                  {/* Rating stars */}
-                  <div className="flex items-center justify-center gap-1 mb-6">
-                    {Array(5)
-                      .fill()
-                      .map((_, i) => (
-                        <Star
-                          key={i}
-                          size={20}
-                          className={`transition-all duration-300 ${
-                            i < item.rating
-                              ? "text-[#D1863C] fill-[#D1863C] transform hover:scale-110"
-                              : "text-gray-300"
-                          }`}
-                        />
-                      ))}
-                  </div>
-
                   {/* Feedback text */}
-                  <blockquote className="text-xl sm:text-2xl text-gray-700 leading-relaxed mb-8 font-medium italic">
+                  <div className="text-xl text-gray-700 leading-relaxed mb-8 font-light">
                     "{item.feedback}"
-                  </blockquote>
+                  </div>
 
                   {/* Student info */}
                   <div className="border-t border-gray-100 pt-6">

@@ -42,7 +42,7 @@ const reasons = [
   },
   {
     icon: <GraduationCap size={28} />,
-    title: "1500+ Student Success Stories",
+    title: "1000+ Student Success Stories",
     description:
       "Thousands have achieved their academic and professional dreams through our guidance and care.",
   },
@@ -54,7 +54,7 @@ export default function WhyChooseUs() {
       <div className="max-w-7xl mx-auto text-center">
         <div className="mb-4 text-center">
           <span className="text-[#701919] font-medium text-sm tracking-wide uppercase">
-            Who Are We?
+            Who Kansai?
           </span>
         </div>
         {/* Section Title */}

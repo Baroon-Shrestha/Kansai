@@ -8,7 +8,6 @@ export default function ContactMain() {
     <div>
       <ContactHero />
       <ContactForm />
-      <Visit />
     </div>
   );
 }

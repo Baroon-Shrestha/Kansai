@@ -26,7 +26,7 @@ export default function WhoAreWe() {
     {
       title: "Proven Track Record",
       content:
-        "With over 15 years of excellence in Japanese language education, we have successfully guided thousands of students toward their goals. Our graduates excel in JLPT examinations, university admissions, and professional careers across Japan and internationally.",
+        "With over 9 years of excellence in Japanese language education, we have successfully guided thousands of students toward their goals. Our graduates excel in JLPT examinations, university admissions, and professional careers across Japan and internationally.",
     },
   ];
 
@@ -187,7 +187,7 @@ export default function WhoAreWe() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end">
                   <div className="p-6 sm:p-8 text-white">
                     <p className="text-sm opacity-90">
-                      Trusted by 200+ international students
+                      Trusted by 1000+ international students
                     </p>
                   </div>
                 </div>
@@ -197,7 +197,7 @@ export default function WhoAreWe() {
               <div className="absolute -top-4 sm:-top-6 right-4 sm:right-6 bg-white rounded-2xl p-3 sm:p-4 shadow-xl border border-gray-100 transition-all duration-1000 delay-[600ms]">
                 <div className="text-center">
                   <div className="text-xl sm:text-2xl font-bold text-green-600">
-                    98%
+                    90%
                   </div>
                   <div className="text-xs text-gray-600">Pass Rate</div>
                 </div>
@@ -206,7 +206,7 @@ export default function WhoAreWe() {
               <div className="absolute -bottom-4 sm:-bottom-6 right-4 sm:right-6 bg-white rounded-2xl p-3 sm:p-4 shadow-xl border border-gray-100 transition-all duration-1000 delay-[700ms]">
                 <div className="text-center">
                   <div className="text-xl sm:text-2xl font-bold text-blue-600">
-                    15+
+                    9+
                   </div>
                   <div className="text-xs text-gray-600">Years Experience</div>
                 </div>

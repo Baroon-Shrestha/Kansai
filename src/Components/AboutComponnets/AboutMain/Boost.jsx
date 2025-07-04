@@ -44,7 +44,7 @@ export default function Boost() {
             <div className="relative ">
               <div className="aspect-[4/3] rounded-2xl overflow-hidden flex items-center justify-center">
                 {/* Placeholder for image */}
-                <div className="text-slate-400 text-center bg-[#701919] p-4 rounded-2xl">
+                <div className="text-slate-400 text-center bg-gradient-to-r from-[#701919] to-[#D1863C] p-4 rounded-2xl">
                   <img src={image} alt="" className="rounded-xl" />
                 </div>
               </div>
@@ -115,7 +115,7 @@ export default function Boost() {
 
             {/* CTA Section */}
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <button className="bg-gradient-to-r from-orange-500 to-yellow-500 hover:from-orange-600 hover:to-yellow-600 text-white font-semibold px-8 py-4 rounded-2xl shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 flex items-center justify-center gap-2">
+              <button className="bg-gradient-to-r from-[#701919] to-[#D1863C] text-white font-semibold px-8 py-4 rounded-2xl shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 flex items-center justify-center gap-2">
                 <BookOpen className="w-5 h-5" />
                 Start Learning Today
               </button>

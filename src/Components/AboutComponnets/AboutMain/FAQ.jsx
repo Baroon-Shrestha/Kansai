@@ -53,6 +53,11 @@ export default function FAQ() {
         <div className="bg-[#FFF8F0]  rounded-4xl">
           <div className="container mx-auto py-20">
             <div className="flex flex-col items-center gap-4 pb-6">
+              <div className="mb-4 text-center">
+                <span className="text-[#701919] font-medium text-sm tracking-wide uppercase">
+                  FAQ's
+                </span>
+              </div>
               <div className="font-extrabold text-4xl capitalize text-center">
                 got questions? here are some Frequently asked questions
               </div>

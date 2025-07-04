@@ -18,7 +18,7 @@ export default function ServicesMain() {
         <DetailedServiceBreakdown />
         <ServiceFlow />
         {/* <ServicePackages /> */}
-        <SuccessStats />
+        {/* <SuccessStats /> */}
         <FAQ />
       </div>
     </>

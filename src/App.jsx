@@ -8,10 +8,12 @@ import Gallery from "./Pages/Gallery";
 import Nav from "./Components/HomeComponents/Nav";
 import About from "./Pages/About";
 import Contact from "./Pages/Contact";
+import { Toaster } from "react-hot-toast";
 
 function App() {
   return (
     <>
+      <Toaster position="top-right" reverseOrder={false} />
       <Nav />
       <Routes>
         <Route path="/" element={<HomePage />} />

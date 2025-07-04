@@ -51,6 +51,11 @@ export default function ServiceOverviewGrid() {
   return (
     <section className="py-16 px-6 bg-white">
       <div className="max-w-7xl mx-auto text-center">
+        <div className="mb-4 text-center">
+          <span className="text-[#701919] font-medium text-sm tracking-wide uppercase">
+            Core Services
+          </span>
+        </div>
         <h2 className="text-4xl font-bold text-[#701919] mb-6">
           Our Core Services
         </h2>

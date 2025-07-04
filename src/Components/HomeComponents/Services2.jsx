@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import {
   Users,
   BookOpen,
@@ -7,12 +7,25 @@ import {
   DollarSign,
   ArrowRight,
 } from "lucide-react";
+import { motion, useInView } from "framer-motion";
 
 export default function Services2() {
+  const sectionRef = useRef(null);
+  const isInView = useInView(sectionRef, { once: true, threshold: 0.2 });
+
+  const containerVariants = {
+    hidden: { opacity: 0, y: 30 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.8, ease: "easeOut" },
+    },
+  };
   return (
     <section className="bg-[#FFF8F0] min-h-screen px-6 py-16 mx-6 rounded-3xl">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
+
         <div className="mb-4">
           <span className="text-[#701919] font-medium text-sm tracking-wide uppercase">
             SERVICES
@@ -24,12 +37,13 @@ export default function Services2() {
           {/* Header Content */}
           <div className="mb-8">
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6 leading-tight">
-              Why people suggest to learn our courses.
+              Why Choose Kansai’s Language Programs?
             </h2>
             <p className="text-gray-500 text-base sm:text-lg leading-relaxed">
-              We focus on industry leading platforms so that you can be prepared
-              for your next job. Then we teach all we can — Overpass is the
-              solution.
+              At Kansai Consultancy, our Japanese language programs are designed
+              not just for fluency—but for your future in Japan. From certified
+              instructors to hands-on guidance, we prepare you for success in
+              every step of your career.
             </p>
           </div>
 
@@ -41,7 +55,7 @@ export default function Services2() {
                 <Users className="w-5 h-5 sm:w-6 sm:h-6 text-purple-600" />
               </div>
               <h3 className="text-sm sm:text-lg font-semibold text-gray-900 mb-2 leading-tight">
-                Industry expert teachers
+                Certified Native-Level Instructors
               </h3>
               <div className="flex justify-end mt-4 sm:mt-6">
                 <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 text-gray-400" />
@@ -54,7 +68,7 @@ export default function Services2() {
                 <BookOpen className="w-5 h-5 sm:w-6 sm:h-6 text-green-600" />
               </div>
               <h3 className="text-sm sm:text-lg font-semibold text-gray-900 mb-2 leading-tight">
-                More than +20 categories
+                Tailored JLPT & NAT Curriculum
               </h3>
               <div className="flex justify-end mt-4 sm:mt-6">
                 <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 text-gray-400" />
@@ -67,7 +81,7 @@ export default function Services2() {
                 <Lightbulb className="w-5 h-5 sm:w-6 sm:h-6 text-yellow-600" />
               </div>
               <h3 className="text-sm sm:text-lg font-semibold text-gray-900 mb-2 leading-tight">
-                Creative thinking with exam
+                Interactive Practice & Mock Exams
               </h3>
               <div className="flex justify-end mt-4 sm:mt-6">
                 <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 text-gray-400" />
@@ -80,7 +94,7 @@ export default function Services2() {
                 <UserCheck className="w-5 h-5 sm:w-6 sm:h-6 text-red-600" />
               </div>
               <h3 className="text-sm sm:text-lg font-semibold text-gray-900 mb-2 leading-tight">
-                Private monitoring & suggestions
+                1-on-1 Monitoring, consultation & Feedback
               </h3>
               <div className="flex justify-end mt-4 sm:mt-6">
                 <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 text-gray-400" />
@@ -93,7 +107,7 @@ export default function Services2() {
                 <DollarSign className="w-5 h-5 sm:w-6 sm:h-6 text-blue-600" />
               </div>
               <h3 className="text-sm sm:text-lg font-semibold text-gray-900 mb-2 leading-tight">
-                Affordable prices with discount
+                Affordable Plans with Seasonal Discounts
               </h3>
               <div className="flex justify-end mt-4 sm:mt-6">
                 <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 text-gray-400" />
