@@ -1,0 +1,69 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "service": "Services",
+    "gallery": "Gallery",
+    "contact": "Contact"
+  },
+  "home": {
+    "hero": {
+      "headings": [
+        "Step into Japan with us",
+        "Begin your journey to Japan",
+        "Start your Japan adventure"
+      ],
+      "greet": "Welcome To",
+      "heading1": "Kansai Int'l",
+      "heading2": "Language Center",
+      "subheading": "Experience authentic Japanese learning with our comprehensive programs that connect you to Japan's rich culture and traditions."
+    },
+    "intro": {
+      "ending1": "Ready to take the next step? Let Kansai be your guide.",
+      "ending2": "Begin your future with confidence — start your journey with us today."
+    },
+    "service": {
+      "heading": "Why people suggest to learn our courses.",
+      "subheading": "We focus on industry leading platforms so that you can be prepared for your next job. Then we teach all we can — Overpass is the solution.",
+      "service1": "Certified Native-Level Instructors",
+      "service2": "Tailored JLPT & NAT Curriculum",
+      "service3": "Interactive Practice & Mock Exams",
+      "service4": "1-on-1 Monitoring, consultation & Feedback",
+      "service5": "Affordable Plans with Discounts"
+    },
+    "team": {
+      "heading": "Meet Our Team",
+      "subheading": "Professionals dedicated to delivering exceptional experiences. Each member brings unique expertise and creativity to make our vision a reality."
+    },
+    "why": {
+      "heading": "Why Choose Us?",
+      "subheading": "At Kansai International Academy, we believe each student deserves a clear path and full support. Discover why students trust us to guide them to Japan.",
+      "whychoose": [
+        {
+          "title": "High Visa Approval Rate",
+          "description": "We maintain an excellent record in helping students get their Japan study visas approved swiftly and correctly."
+        },
+        {
+          "title": "Tailored Education Plans",
+          "description": "We personalize language training, job coaching, and consulting based on your goals and current proficiency."
+        },
+        {
+          "title": "Strong Japanese Network",
+          "description": "We partner with top institutions and employers across Japan to create real pathways for your future."
+        },
+        {
+          "title": "Native Language Support",
+          "description": "Our staff speaks Nepali, English, and Japanese — ensuring you’re understood at every step."
+        },
+        {
+          "title": "Complete Journey Assistance",
+          "description": "From interview prep to accommodation and culture training — we’re with you before and after arrival."
+        },
+        {
+          "title": "1000+ Student Success Stories",
+          "description": "Thousands have achieved their academic and professional dreams through our guidance and care."
+        }
+      ]
+    }
+  }
+}

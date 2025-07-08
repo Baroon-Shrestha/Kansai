@@ -10,12 +10,13 @@ import {
 import React, { useState, useEffect } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import logo from "../assets/logo.png";
+import { useTranslation } from "react-i18next";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const location = useLocation();
-
+  const { t } = useTranslation();
   // Scroll effect
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 20);
@@ -30,10 +31,10 @@ export default function Navbar() {
   }, [location.pathname]);
 
   const navItems = [
-    { path: "/", label: "Home", icon: Home },
-    { path: "/about", label: "About Us", icon: Users },
-    { path: "/services", label: "Services", icon: Settings },
-    { path: "/gallery", label: "Gallery", icon: Image },
+    { path: "/", labelkey: "nav.home", icon: Home },
+    { path: "/about", labelkey: "nav.about", icon: Users },
+    { path: "/services", labelkey: "nav.service", icon: Settings },
+    { path: "/gallery", labelkey: "nav.gallery", icon: Image },
   ];
 
   return (
@@ -75,7 +76,7 @@ export default function Navbar() {
 
             {/* Desktop Nav */}
             <div className="hidden lg:flex items-center space-x-4">
-              {navItems.map(({ path, label, icon: Icon }) => (
+              {navItems.map(({ path, labelkey, icon: Icon }) => (
                 <NavLink
                   key={path}
                   to={path}
@@ -88,7 +89,7 @@ export default function Navbar() {
                   }
                 >
                   <Icon className="w-4 h-4 transition-transform duration-300 group-hover:scale-110" />
-                  <span>{label}</span>
+                  <span>{t(labelkey)}</span>
                 </NavLink>
               ))}
             </div>
@@ -127,7 +128,7 @@ export default function Navbar() {
         >
           <div className="container mx-auto px-4 py-6">
             <div className="space-y-2">
-              {navItems.map(({ path, label, icon: Icon }, index) => (
+              {navItems.map(({ path, labelkey, icon: Icon }, index) => (
                 <NavLink
                   key={path}
                   to={path}
@@ -141,7 +142,7 @@ export default function Navbar() {
                   style={{ transitionDelay: `${index * 50}ms` }}
                 >
                   <Icon className="w-5 h-5 transition-transform duration-300 group-hover:scale-110" />
-                  <span className="text-lg">{label}</span>
+                  <span className="text-lg">{t(labelkey)}</span>
                   <ChevronDown className="w-4 h-4 ml-auto opacity-30 -rotate-90 transition-transform duration-300 group-hover:translate-x-1" />
                 </NavLink>
               ))}

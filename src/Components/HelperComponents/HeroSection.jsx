@@ -37,7 +37,7 @@ export default function HeroSection({ title, subtitle, bgImage, current }) {
   };
 
   return (
-    <section className="relative h-[30vh] min-h-[300px] flex items-center overflow-hidden">
+    <section className="relative min-h-[40vh] flex items-center overflow-hidden">
       {/* Background */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -89,7 +89,7 @@ export default function HeroSection({ title, subtitle, bgImage, current }) {
           {subtitle}
         </motion.p>
         <motion.div
-          className="flex items-center gap-2 uppercase mt-6"
+          className="text-sm md:text-lg font-extralight flex items-center gap-2 uppercase mt-6"
           variants={itemVariants}
         >
           <Link to="/">

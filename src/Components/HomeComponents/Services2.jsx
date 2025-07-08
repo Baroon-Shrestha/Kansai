@@ -8,11 +8,12 @@ import {
   ArrowRight,
 } from "lucide-react";
 import { motion, useInView } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 export default function Services2() {
   const sectionRef = useRef(null);
   const isInView = useInView(sectionRef, { once: true, threshold: 0.2 });
-
+  const { t } = useTranslation();
   const containerVariants = {
     hidden: { opacity: 0, y: 30 },
     visible: {
@@ -28,7 +29,7 @@ export default function Services2() {
 
         <div className="mb-4">
           <span className="text-[#701919] font-medium text-sm tracking-wide uppercase">
-            SERVICES
+            {t("nav.service")}
           </span>
         </div>
 
@@ -37,13 +38,10 @@ export default function Services2() {
           {/* Header Content */}
           <div className="mb-8">
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6 leading-tight">
-              Why Choose Kansai’s Language Programs?
+              {t("home.service.heading")}
             </h2>
             <p className="text-gray-500 text-base sm:text-lg leading-relaxed">
-              At Kansai Consultancy, our Japanese language programs are designed
-              not just for fluency—but for your future in Japan. From certified
-              instructors to hands-on guidance, we prepare you for success in
-              every step of your career.
+              {t("home.service.subheading")}
             </p>
           </div>
 
@@ -55,7 +53,7 @@ export default function Services2() {
                 <Users className="w-5 h-5 sm:w-6 sm:h-6 text-purple-600" />
               </div>
               <h3 className="text-sm sm:text-lg font-semibold text-gray-900 mb-2 leading-tight">
-                Certified Native-Level Instructors
+                {t("home.service.service1")}
               </h3>
               <div className="flex justify-end mt-4 sm:mt-6">
                 <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 text-gray-400" />
@@ -68,7 +66,7 @@ export default function Services2() {
                 <BookOpen className="w-5 h-5 sm:w-6 sm:h-6 text-green-600" />
               </div>
               <h3 className="text-sm sm:text-lg font-semibold text-gray-900 mb-2 leading-tight">
-                Tailored JLPT & NAT Curriculum
+                {t("home.service.service2")}
               </h3>
               <div className="flex justify-end mt-4 sm:mt-6">
                 <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 text-gray-400" />
@@ -81,7 +79,7 @@ export default function Services2() {
                 <Lightbulb className="w-5 h-5 sm:w-6 sm:h-6 text-yellow-600" />
               </div>
               <h3 className="text-sm sm:text-lg font-semibold text-gray-900 mb-2 leading-tight">
-                Interactive Practice & Mock Exams
+                {t("home.service.service3")}
               </h3>
               <div className="flex justify-end mt-4 sm:mt-6">
                 <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 text-gray-400" />
@@ -94,7 +92,7 @@ export default function Services2() {
                 <UserCheck className="w-5 h-5 sm:w-6 sm:h-6 text-red-600" />
               </div>
               <h3 className="text-sm sm:text-lg font-semibold text-gray-900 mb-2 leading-tight">
-                1-on-1 Monitoring, consultation & Feedback
+                {t("home.service.service4")}
               </h3>
               <div className="flex justify-end mt-4 sm:mt-6">
                 <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 text-gray-400" />
@@ -107,7 +105,7 @@ export default function Services2() {
                 <DollarSign className="w-5 h-5 sm:w-6 sm:h-6 text-blue-600" />
               </div>
               <h3 className="text-sm sm:text-lg font-semibold text-gray-900 mb-2 leading-tight">
-                Affordable Plans with Seasonal Discounts
+                {t("home.service.service5")}
               </h3>
               <div className="flex justify-end mt-4 sm:mt-6">
                 <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 text-gray-400" />
@@ -121,12 +119,10 @@ export default function Services2() {
           {/* Main Title Card */}
           <div className="col-span-2 pr-8">
             <h2 className="text-5xl font-bold text-gray-900 mb-6 leading-tight">
-              Why people suggest to learn our courses.
+              {t("home.service.heading")}
             </h2>
             <p className="text-gray-500 text-lg leading-relaxed">
-              We focus on industry leading platforms so that you can be prepared
-              for your next job. Then we teach all we can — Overpass is the
-              solution.
+              {t("home.service.subheading")}
             </p>
           </div>
 
@@ -136,7 +132,7 @@ export default function Services2() {
               <Users className="w-6 h-6 text-purple-600" />
             </div>
             <h3 className="text-xl font-semibold text-gray-900 mb-2">
-              Industry expert teachers
+              {t("home.service.service1")}
             </h3>
             <div className="flex justify-end mt-8">
               <ArrowRight className="w-5 h-5 text-gray-400" />
@@ -149,7 +145,7 @@ export default function Services2() {
               <BookOpen className="w-6 h-6 text-green-600" />
             </div>
             <h3 className="text-xl font-semibold text-gray-900 mb-2">
-              More than +20 categories
+              {t("home.service.service2")}
             </h3>
             <div className="flex justify-end mt-8">
               <ArrowRight className="w-5 h-5 text-gray-400" />
@@ -165,7 +161,7 @@ export default function Services2() {
               <Lightbulb className="w-6 h-6 text-yellow-600" />
             </div>
             <h3 className="text-xl font-semibold text-gray-900 mb-2">
-              Creative thinking with exam
+              {t("home.service.service3")}
             </h3>
             <div className="flex justify-end mt-8">
               <ArrowRight className="w-5 h-5 text-gray-400" />
@@ -178,7 +174,7 @@ export default function Services2() {
               <UserCheck className="w-6 h-6 text-red-600" />
             </div>
             <h3 className="text-xl font-semibold text-gray-900 mb-2">
-              Private monitoring & suggestions
+              {t("home.service.service4")}
             </h3>
             <div className="flex justify-end mt-8">
               <ArrowRight className="w-5 h-5 text-gray-400" />
@@ -191,7 +187,7 @@ export default function Services2() {
               <DollarSign className="w-6 h-6 text-blue-600" />
             </div>
             <h3 className="text-xl font-semibold text-gray-900 mb-2">
-              Affordable prices with discount
+              {t("home.service.service5")}
             </h3>
             <div className="flex justify-end mt-8">
               <ArrowRight className="w-5 h-5 text-gray-400" />

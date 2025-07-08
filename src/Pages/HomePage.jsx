@@ -7,6 +7,8 @@ import WhytoChooseUs from "../Components/HomeComponents/WhytoChooseUs";
 import Services from "../Components/HomeComponents/Services";
 import Services2 from "../Components/HomeComponents/Services2";
 import Intro from "../Components/HomeComponents/Intro";
+import Scroll from "../Components/HomeComponents/Scroll";
+import NewSection from "../Components/HomeComponents/NewSection";
 
 export default function HomePage() {
   return (
@@ -15,8 +17,10 @@ export default function HomePage() {
       <Intro />
       {/* <Services /> */}
       <Services2 />
+      <NewSection />
       <WhytoChooseUs />
-      <Team />
+      {/* <Scroll /> */}
+      {/* <Team /> */}
       <Visitus />
     </div>
   );

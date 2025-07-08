@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import school from "../../../assets/school.jpg";
+import CircularText from "../../HelperComponents/CircularText";
 
 export default function WhoAreWe() {
   const [isVisible, setIsVisible] = useState(false);
@@ -197,10 +198,17 @@ export default function WhoAreWe() {
               <div className="absolute -top-4 sm:-top-6 right-4 sm:right-6 bg-white rounded-2xl p-3 sm:p-4 shadow-xl border border-gray-100 transition-all duration-1000 delay-[600ms]">
                 <div className="text-center">
                   <div className="text-xl sm:text-2xl font-bold text-green-600">
-                    90%
+                    90
                   </div>
                   <div className="text-xs text-gray-600">Pass Rate</div>
                 </div>
+
+                {/* <CircularText
+                  text="REACT*BITS*COMPONENTS*"
+                  onHover="speedUp"
+                  spinDuration={20}
+                  className="custom-class"
+                /> */}
               </div>
 
               <div className="absolute -bottom-4 sm:-bottom-6 right-4 sm:right-6 bg-white rounded-2xl p-3 sm:p-4 shadow-xl border border-gray-100 transition-all duration-1000 delay-[700ms]">

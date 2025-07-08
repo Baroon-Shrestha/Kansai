@@ -217,8 +217,8 @@ export default function ContactForm() {
           {/* Contact Form */}
           <div className="bg-white rounded-3xl p-8 shadow-xl border border-amber-100">
             <div className="flex items-center gap-3 mb-6">
-              <div className="bg-gradient-to-r from-[#701919] to-[#D1863C] w-10 h-10 rounded-full flex items-center justify-center">
-                <Send className="text-white" size={20} />
+              <div className="flex items-center justify-center">
+                <Send className="text-[#701919]" size={20} />
               </div>
               <h2 className="text-2xl font-bold text-gray-800">
                 Send us a Message

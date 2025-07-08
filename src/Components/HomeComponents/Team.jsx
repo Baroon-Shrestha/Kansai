@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import Carousel from "../HelperComponents/Carousel";
+import { useTranslation } from "react-i18next";
 
 const teamMembers = [
   {
@@ -51,7 +52,7 @@ export default function Team() {
   const scrollRef = useRef();
   const [canScrollLeft, setCanScrollLeft] = useState(false);
   const [canScrollRight, setCanScrollRight] = useState(true);
-
+  const { t } = useTranslation();
   const checkScrollButtons = () => {
     const element = scrollRef.current;
     if (element) {
@@ -89,20 +90,18 @@ export default function Team() {
 
   return (
     <>
-      <div className="container mx-auto py-16">
+      <div className="container mx-auto pt-16">
         <div className="mb-4 text-center">
           <span className="text-[#701919] font-medium text-sm tracking-wide uppercase">
-            Our Team
+            {t("home.team.heading")}
           </span>
         </div>
         <div className="flex items-center flex-col gap-6">
           <div className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#701919]">
-            Meet Our Team
+            {t("home.team.heading")}
           </div>
           <div className="text-base sm:text-xl md:text-xl font-extralight max-w-3xl text-center">
-            Professionals dedicated to delivering exceptional experiences. Each
-            member brings unique expertise and creativity to make our vision a
-            reality.
+            {t("home.team.subheading")}
           </div>
         </div>
         <Carousel />

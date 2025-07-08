@@ -8,64 +8,35 @@ import {
   MessageSquareHeart,
   GraduationCap,
 } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
-const reasons = [
-  {
-    icon: <FileCheck2 size={28} />,
-    title: "High Visa Approval Rate",
-    description:
-      "We maintain an excellent record in helping students get their Japan study visas approved swiftly and correctly.",
-  },
-  {
-    icon: <UserCheck size={28} />,
-    title: "Tailored Education Plans",
-    description:
-      "We personalize language training, job coaching, and consulting based on your goals and current proficiency.",
-  },
-  {
-    icon: <MapPin size={28} />,
-    title: "Strong Japanese Network",
-    description:
-      "We partner with top institutions and employers across Japan to create real pathways for your future.",
-  },
-  {
-    icon: <MessageSquareHeart size={28} />,
-    title: "Native Language Support",
-    description:
-      "Our staff speaks Nepali, English, and Japanese — ensuring you’re understood at every step.",
-  },
-  {
-    icon: <CheckCircle size={28} />,
-    title: "Complete Journey Assistance",
-    description:
-      "From interview prep to accommodation and culture training — we’re with you before and after arrival.",
-  },
-  {
-    icon: <GraduationCap size={28} />,
-    title: "1000+ Student Success Stories",
-    description:
-      "Thousands have achieved their academic and professional dreams through our guidance and care.",
-  },
+const icons = [
+  <FileCheck2 size={28} />,
+  <UserCheck size={28} />,
+  <MapPin size={28} />,
+  <MessageSquareHeart size={28} />,
+  <CheckCircle size={28} />,
+  <GraduationCap size={28} />,
 ];
 
 export default function WhyChooseUs() {
+  const { t } = useTranslation();
+  const reasons = t("home.why.whychoose", { returnObjects: true });
   return (
-    <section className="py-20 bg-[#f9f9f9] px-6">
+    <section className="py-20 bg-[#FFF8F0] px-6 rounded-4xl mx-6">
       <div className="max-w-7xl mx-auto text-center">
         <div className="mb-4 text-center">
           <span className="text-[#701919] font-medium text-sm tracking-wide uppercase">
-            Who Kansai?
+            Why Kansai?
           </span>
         </div>
         {/* Section Title */}
         <h2 className="text-4xl font-extrabold text-[#701919] mb-4">
-          Why Choose Us?
+          {t("home.why.heading")}
         </h2>
         <div className="w-24 h-1 mx-auto bg-gradient-to-r from-[#701919] to-[#D1863C] rounded-full mb-8" />
         <p className="text-gray-600 text-lg mb-16 max-w-3xl mx-auto">
-          At Kansai International Academy, we believe each student deserves a
-          clear path and full support. Discover why students trust us to guide
-          them to Japan.
+          {t("home.why.subheading")}
         </p>
 
         {/* Feature Grid */}
@@ -75,7 +46,7 @@ export default function WhyChooseUs() {
               key={index}
               className="bg-white rounded-2xl shadow-md p-6 text-left hover:shadow-lg transition duration-300"
             >
-              <div className="text-[#701919] mb-4">{item.icon}</div>
+              <div className="text-[#701919] mb-4">{icons[index]}</div>
               <h3 className="text-xl font-semibold mb-2 text-[#701919]">
                 {item.title}
               </h3>

@@ -112,18 +112,6 @@ export default function Boost() {
                 })}
               </div>
             </div>
-
-            {/* CTA Section */}
-            <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <button className="bg-gradient-to-r from-[#701919] to-[#D1863C] text-white font-semibold px-8 py-4 rounded-2xl shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 flex items-center justify-center gap-2">
-                <BookOpen className="w-5 h-5" />
-                Start Learning Today
-              </button>
-
-              <button className="bg-white/80 backdrop-blur-sm hover:bg-white text-gray-800 font-semibold px-8 py-4 rounded-2xl border border-gray-200 hover:border-gray-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300">
-                View Course Details
-              </button>
-            </div>
           </div>
         </div>
       </div>

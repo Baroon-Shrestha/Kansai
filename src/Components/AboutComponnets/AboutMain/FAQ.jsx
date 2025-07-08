@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Accordion from "../../HelperComponents/Accordion";
 import AccordionItem from "../../HelperComponents/Accordion";
+import { Link } from "react-router-dom";
 
 export default function FAQ() {
   const [openItems, setOpenItems] = useState(new Set());
@@ -82,11 +83,13 @@ export default function FAQ() {
               ))}
             </div>
 
-            <div className="text-center mt-8">
-              <button className="px-6 py-3 bg-gradient-to-r from-[#701919] to-[#D1863C] text-white rounded-lg transition-colors duration-200 font-medium">
-                See more FAQ's
-              </button>
-            </div>
+            <Link to="/faq">
+              <div className="text-center mt-8">
+                <button className="px-6 py-3 bg-gradient-to-r from-[#701919] to-[#D1863C] text-white rounded-lg transition-colors duration-200 font-medium">
+                  See more FAQ's
+                </button>
+              </div>
+            </Link>
           </div>
         </div>
       </div>

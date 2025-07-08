@@ -9,6 +9,8 @@ import Nav from "./Components/HomeComponents/Nav";
 import About from "./Pages/About";
 import Contact from "./Pages/Contact";
 import { Toaster } from "react-hot-toast";
+import LanguageSwitcher from "./Components/HelperComponents/LanguageSwitcher";
+import FAQmain from "./Components/FAQComponents/FAQmain";
 
 function App() {
   return (
@@ -18,11 +20,13 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<About />} />
+        <Route path="/faq" element={<FAQmain />} />
         <Route path="/services" element={<Services />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
+      <LanguageSwitcher />
     </>
   );
 }

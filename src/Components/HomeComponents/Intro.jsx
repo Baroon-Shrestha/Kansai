@@ -2,11 +2,12 @@ import React from "react";
 import img1 from "../../assets/school.jpg";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
+import { useTranslation } from "react-i18next";
 
 export default function Intro() {
   const sectionRef = useRef(null);
   const isInView = useInView(sectionRef, { once: true, threshold: 0.2 });
-
+  const { t } = useTranslation();
   return (
     <section ref={sectionRef} className="container mx-auto my-12 px-4">
       <div className="flex flex-col items-center gap-6">
@@ -18,8 +19,10 @@ export default function Intro() {
           className="text-center"
         >
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight">
-            Welcome to{" "}
-            <span className="text-[#F78C1F]">KANSAI INTERNATIONAL ACADEMY</span>
+            {t("home.hero.greet")}{" "}
+            <span className="text-[#F78C1F]">
+              {t("home.hero.heading1")} {t("home.hero.heading2")}
+            </span>
           </h1>
           <p className="mt-2 text-lg sm:text-xl md:text-2xl font-medium text-gray-700">
             Leading students to a bright future in JAPAN.
@@ -84,12 +87,11 @@ export default function Intro() {
               {/* Clear float for the call-to-action */}
               <div className="clear-both text-center mt-8">
                 <span className="text-[#F78C1F] font-bold text-lg">
-                  Now, it's your turn. Join us. Let's build your future
-                  together.{" "}
+                  {t("home.intro.ending1")}
                 </span>
                 <br />
                 <span className="font-extralight text-center italic">
-                  "Start Your Journey At Kansai."
+                  {t("home.intro.ending2")}
                 </span>
               </div>
             </div>

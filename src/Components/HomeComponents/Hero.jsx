@@ -3,17 +3,15 @@ import { ArrowRight, Info } from "lucide-react";
 import img1 from "../../assets/Images/img1.jpeg";
 import img2 from "../../assets/Images/img2.jpeg";
 import RotatingText from "../HelperComponents/RotatingText";
+import { useTranslation } from "react-i18next";
 
 export default function Hero() {
   const [currentText, setCurrentText] = useState(0);
   const [animatedText, setAnimatedText] = useState("");
   const [isTyping, setIsTyping] = useState(true);
+  const { t } = useTranslation();
 
-  const textVariations = [
-    "Take your first step towards Japan with",
-    "Begin your Japanese journey with",
-    "Start your adventure in Japan with",
-  ];
+  const textVariations = t("home.hero.headings", { returnObjects: true });
 
   useEffect(() => {
     let timeout;
@@ -69,12 +67,8 @@ export default function Hero() {
               ></span>
             </div> */}
             <RotatingText
-              texts={[
-                "Step into Japan with us",
-                "Begin your journey to Japan",
-                "Start your Japan adventure",
-              ]}
-              mainClassName="px-2 sm:px-2 md:px-3 bg-gradient-to-r from-[#701919] to-[#D1863C] text-white shadow-lg font-extrabold text-3xl overflow-hidden py-0.5 sm:py-1 md:py-2 justify-center rounded-lg"
+              texts={textVariations}
+              mainClassName="px-2 sm:px-2 md:px-3 bg-gradient-to-r from-[#701919] to-[#D1863C] text-white shadow-lg font-extrabold text-xl md:3xl overflow-hidden py-0.5 sm:py-1 md:py-2 justify-center rounded-lg"
               staggerFrom={"last"}
               initial={{ y: "100%" }}
               animate={{ y: 0 }}
@@ -87,16 +81,15 @@ export default function Hero() {
 
             <h1 className="font-bold text-3xl sm:text-4xl lg:text-5xl xl:text-6xl leading-tight mb-4 cursor-default">
               <span className="bg-gradient-to-r from-[#701919] via-[#8B2635] to-[#701919] text-transparent bg-clip-text drop-shadow-sm">
-                Kansai Int&apos;l{" "}
+                {t("home.hero.heading1")}{" "}
               </span>
               <span className="font-semibold text-[#D1863C] drop-shadow-sm">
-                Language Center
+                {t("home.hero.heading2")}
               </span>
             </h1>
 
             <p className="text-base sm:text-lg lg:text-xl text-slate-600 leading-relaxed max-w-2xl mx-auto font-light mt-6">
-              Experience authentic Japanese learning with our comprehensive
-              programs that connect you to Japan's rich culture and traditions.
+              {t("home.hero.subheading")}
             </p>
 
             <div className="flex justify-center gap-6 lg:gap-12 mt-10">

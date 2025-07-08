@@ -11,6 +11,7 @@ import {
   AlertCircle,
   CheckCircle,
   ArrowDown,
+  Building,
 } from "lucide-react";
 
 export default function Visitus() {
@@ -234,48 +235,58 @@ export default function Visitus() {
         </div>
 
         {/* Main Content Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-1 gap-12 mb-16">
+        <div className="max-w-7xl text-left grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
           {/* Contact Form */}
 
           <div className="space-y-8">
-            <div className="bg-gradient-to-br from-[#701919] to-[#D1863C] rounded-3xl p-8 text-white shadow-xl flex items-center justify-around">
-              <div>
-                <div className="flex items-center gap-3 mb-6">
-                  <div className="bg-white/20 backdrop-blur-sm w-10 h-10 rounded-full flex items-center justify-center">
-                    <Users className="text-white" size={20} />
+            <div className="space-y-8">
+              <div className="bg-gradient-to-br from-[#701919] to-[#D1863C] rounded-3xl text-white shadow-2xl p-8">
+                <div className="flex items-center gap-3 mb-8">
+                  <div className="bg-white/20 backdrop-blur-sm w-12 h-12 rounded-2xl flex items-center justify-center">
+                    <Building className="text-white" size={24} />
                   </div>
-                  <h2 className="text-2xl font-bold">Office Information</h2>
+                  <div>
+                    <h2 className="text-2xl font-bold">Office Information</h2>
+                    <p className="text-white/80">Visit us during these hours</p>
+                  </div>
                 </div>
 
-                <div className="space-y-6">
+                <div className="space-y-8">
                   <div className="flex items-start gap-4">
-                    <div className="bg-white/20 backdrop-blur-sm p-3 rounded-xl">
-                      <MapPin className="text-white" size={20} />
+                    <div className="bg-white/20 backdrop-blur-sm p-4 rounded-2xl">
+                      <MapPin className="text-white " size={24} />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-lg mb-1">Address</h3>
-                      <p className="text-white/90">
+                      <h3 className="font-bold text-lg mb-2 text-left">
+                        Our Address
+                      </h3>
+                      <p className="text-white/90 text-lg">
                         BagBazar, Kathmandu, Nepal
+                      </p>
+                      <p className="text-white/70 text-sm mt-1">
+                        Easy access by public transport
                       </p>
                     </div>
                   </div>
 
                   <div className="flex items-start gap-4">
-                    <div className="bg-white/20 backdrop-blur-sm p-3 rounded-xl">
-                      <Clock className="text-white" size={20} />
+                    <div className="bg-white/20 backdrop-blur-sm p-4 rounded-2xl">
+                      <Clock className="text-white" size={24} />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-lg mb-2">
+                      <h3 className="font-bold text-lg mb-3 text-left">
                         Office Hours
                       </h3>
-                      <div className="space-y-2 text-white/90">
-                        <div className="flex justify-between items-center">
+                      <div className="space-y-3 text-white/90">
+                        <div className="flex justify-between items-center p-2 bg-white/10 rounded-lg">
                           <span>Sunday - Friday:</span>
-                          <span className="font-medium">9:00 AM - 6:00 PM</span>
+                          <span className="font-semibold">
+                            9:00 AM - 6:00 PM
+                          </span>
                         </div>
-                        <div className="flex justify-between items-center">
+                        <div className="flex justify-between items-center p-2 bg-white/10 rounded-lg">
                           <span>Saturday:</span>
-                          <span className="font-medium text-red-600 bg-white/90 px-2 py-1 rounded">
+                          <span className="font-semibold text-red-700 bg-white px-3 py-1 rounded-md text-sm">
                             Closed
                           </span>
                         </div>
@@ -283,16 +294,14 @@ export default function Visitus() {
                     </div>
                   </div>
                 </div>
-              </div>
-              <div className="flex flex-col items-center gap-6">
-                <div className="font-bold capitalize text-2xl text-center max-w-3xl md:text-3xl">
-                  Come and visit us in person at
-                </div>
-                <ArrowDown />
-                <div>
+
+                <div className="mt-8 p-6 bg-white/10 backdrop-blur-sm rounded-2xl">
+                  <h3 className="font-bold text-lg mb-4 text-left">
+                    Ready to Visit Us?
+                  </h3>
                   <button
                     onClick={handleDirectionsClick}
-                    className="w-[20vw] bg-white/20 backdrop-blur-sm hover:bg-white/30 text-white font-semibold py-3 px-6 rounded-xl transition-all duration-300 flex items-center justify-center gap-2"
+                    className="w-full bg-white text-[#701919] font-bold py-4 px-6 rounded-2xl hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2"
                   >
                     <Navigation size={20} />
                     Get Directions
@@ -302,24 +311,25 @@ export default function Visitus() {
             </div>
 
             {/* Interactive Map */}
-            <div className="relative overflow-hidden rounded-3xl shadow-xl">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d954.2585084732984!2d85.31832607491594!3d27.735762175431017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19bbcdc2e83b%3A0x5e2236bb8d5f5b5!2sMomiji%20Academy!5e0!3m2!1sen!2snp!4v1750137174540!5m2!1sen!2snp"
-                style={{ border: 0 }}
-                allowFullScreen=""
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                className="w-full h-80"
-              ></iframe>
-              <div className="absolute bottom-4 right-4">
-                <button
-                  onClick={handleDirectionsClick}
-                  className="bg-white hover:bg-gray-50 text-[#701919] font-semibold py-2 px-4 rounded-xl shadow-lg transition-all duration-300 flex items-center gap-2 text-sm"
-                >
-                  <Navigation size={16} />
-                  Open in Maps
-                </button>
-              </div>
+          </div>
+          <div className="relative overflow-hidden rounded-3xl shadow-xl h-80 md:h-96">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d954.2585084732984!2d85.31832607491594!3d27.735762175431017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19bbcdc2e83b%3A0x5e2236bb8d5f5b5!2sMomiji%20Academy!5e0!3m2!1sen!2snp!4v1750137174540!5m2!1sen!2snp"
+              style={{ border: 0 }}
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              className="absolute top-0 left-0 w-full h-full"
+            ></iframe>
+
+            <div className="absolute bottom-4 right-4 z-10">
+              <button
+                onClick={handleDirectionsClick}
+                className="bg-white hover:bg-gray-50 text-[#701919] font-semibold py-2 px-4 rounded-xl shadow-lg transition-all duration-300 flex items-center gap-2 text-sm"
+              >
+                <Navigation size={16} />
+                Open in Maps
+              </button>
             </div>
           </div>
         </div>

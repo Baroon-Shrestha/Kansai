@@ -6,7 +6,7 @@ export default function Team() {
   return (
     <>
       <div>
-        <div className="container mx-auto py-10 space-y-10">
+        <div className="container mx-auto pt-10 space-y-10">
           <div className="mb-4 text-center">
             <span className="text-[#701919] font-medium text-sm tracking-wide uppercase">
               Our Team
