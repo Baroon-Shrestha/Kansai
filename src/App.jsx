@@ -10,7 +10,7 @@ import About from "./Pages/About";
 import Contact from "./Pages/Contact";
 import { Toaster } from "react-hot-toast";
 import LanguageSwitcher from "./Components/HelperComponents/LanguageSwitcher";
-import FAQmain from "./Components/FAQComponents/FAQmain";
+import FAQmain from "./Components/FAQComponents/FAQMain";
 
 function App() {
   return (
@@ -26,7 +26,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
-      <LanguageSwitcher />
+      {/* <LanguageSwitcher /> */}
     </>
   );
 }

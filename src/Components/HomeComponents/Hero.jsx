@@ -4,6 +4,7 @@ import img1 from "../../assets/Images/img1.jpeg";
 import img2 from "../../assets/Images/img2.jpeg";
 import RotatingText from "../HelperComponents/RotatingText";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 
 export default function Hero() {
   const [currentText, setCurrentText] = useState(0);
@@ -89,7 +90,10 @@ export default function Hero() {
             </h1>
 
             <p className="text-base sm:text-lg lg:text-xl text-slate-600 leading-relaxed max-w-2xl mx-auto font-light mt-6">
-              {t("home.hero.subheading")}
+              {t("home.hero.subheading")}{" "}
+              <Link to="/about">
+                <b className="font-bold text-[#701919]">Learn More</b>
+              </Link>
             </p>
 
             <div className="flex justify-center gap-6 lg:gap-12 mt-10">
@@ -112,7 +116,7 @@ export default function Hero() {
               ))}
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-5 justify-center pt-10">
+            {/* <div className="flex flex-col sm:flex-row gap-5 justify-center pt-10">
               <button className="group relative overflow-hidden bg-gradient-to-r from-[#701919] via-[#8B2635] to-[#701919] text-white font-semibold py-4 px-8 sm:py-4 sm:px-10 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 hover:scale-105 text-base sm:text-lg">
                 <span className="relative z-10 flex items-center justify-center gap-3">
                   Start Your Journey
@@ -126,7 +130,7 @@ export default function Hero() {
                   <Info className="w-5 h-5 group-hover:rotate-12 group-hover:scale-110 transition-transform duration-300" />
                 </span>
               </button>
-            </div>
+            </div> */}
           </div>
 
           {/* Right Image */}

@@ -62,12 +62,12 @@ export default function FAQ() {
               <div className="font-extrabold text-4xl capitalize text-center">
                 got questions? here are some Frequently asked questions
               </div>
-              <div className="text-lg font-extralight max-w-4xl text-center">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Accusantium ad ab sed aut sit ipsa et beatae dignissimos, nemo
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit
-                eveniet, possimus maiores voluptate ratione repudiandae nemo
-                voluptas consectetur ea dolorum odit.
+              <div className="text-lg font-extralight max-w-5xl text-center">
+                Have questions about studying, training, or working in Japan?
+                We've compiled answers to the most common inquiries to help you
+                better understand our process, services, and how we support your
+                journey from consultation to settlement. If your question isn’t
+                listed, feel free to reach out to our team directly.
               </div>
             </div>
             <div className="space-y-2">
@@ -85,7 +85,7 @@ export default function FAQ() {
 
             <Link to="/faq">
               <div className="text-center mt-8">
-                <button className="px-6 py-3 bg-gradient-to-r from-[#701919] to-[#D1863C] text-white rounded-lg transition-colors duration-200 font-medium">
+                <button className="bg-gradient-to-r from-[#701919] to-[#D1863C] text-white font-semibold px-8 py-3 rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
                   See more FAQ's
                 </button>
               </div>

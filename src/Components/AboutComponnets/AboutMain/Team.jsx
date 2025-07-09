@@ -17,9 +17,11 @@ export default function Team() {
               Meet Our Team
             </div>
             <p className="font-extralight text-xl text-center max-w-3xl">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi
-              quo qui cumque? Ex voluptatum sequi laboriosam adipisci expedita
-              mollitia repellat!
+              At Kansai International Language Center, our dedicated team is
+              passionate about helping students achieve their goals in Japan.
+              With expert guidance, personalized support, and deep cultural
+              knowledge, we are committed to making your journey smooth and
+              successful
             </p>
           </div>
           <Carousel />

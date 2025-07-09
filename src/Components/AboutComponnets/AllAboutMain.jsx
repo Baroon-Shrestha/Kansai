@@ -18,7 +18,9 @@ export default function AllAboutMain() {
       {/* <Aims /> */}
       <Boost />
       <Team />
-      <WhyToChooseUs />
+      <div className="bg-[#FFF8F0] mx-6">
+        <WhyToChooseUs />
+      </div>
       <Testimonials />
 
       <ContactCTA />

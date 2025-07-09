@@ -19,7 +19,7 @@ const servicesData = [
   },
   {
     id: 2,
-    title: "School/University Placement",
+    title: "University Placement/Admissions",
     description:
       "Your gateway to Japan's top educational institutions with personalized guidance and application support.",
     features: [
@@ -35,7 +35,7 @@ const servicesData = [
   },
   {
     id: 3,
-    title: "Visa & Embassy Support",
+    title: "Visa & Documentation Support",
     description:
       "Navigate the complex visa process with confidence through our comprehensive documentation and interview preparation.",
     features: [
@@ -51,7 +51,7 @@ const servicesData = [
   },
   {
     id: 4,
-    title: "Exam Registration & Guidance",
+    title: "Flight and Accommodation Support",
     description:
       "Excel in JLPT and NAT exams with our strategic preparation methods and official registration assistance.",
     features: [

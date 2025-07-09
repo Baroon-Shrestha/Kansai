@@ -9,6 +9,7 @@ import {
 } from "lucide-react";
 import { motion, useInView } from "framer-motion";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 
 export default function Services2() {
   const sectionRef = useRef(null);
@@ -23,7 +24,7 @@ export default function Services2() {
     },
   };
   return (
-    <section className="bg-[#FFF8F0] min-h-screen px-6 py-16 mx-6 rounded-3xl">
+    <section className="bg-[#FFF8F0] min-h-[80vh] px-6 py-16 mx-6 rounded-3xl">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
 
@@ -55,9 +56,6 @@ export default function Services2() {
               <h3 className="text-sm sm:text-lg font-semibold text-gray-900 mb-2 leading-tight">
                 {t("home.service.service1")}
               </h3>
-              <div className="flex justify-end mt-4 sm:mt-6">
-                <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 text-gray-400" />
-              </div>
             </div>
 
             {/* More than +20 categories */}
@@ -68,9 +66,6 @@ export default function Services2() {
               <h3 className="text-sm sm:text-lg font-semibold text-gray-900 mb-2 leading-tight">
                 {t("home.service.service2")}
               </h3>
-              <div className="flex justify-end mt-4 sm:mt-6">
-                <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 text-gray-400" />
-              </div>
             </div>
 
             {/* Creative thinking with exam */}
@@ -81,9 +76,6 @@ export default function Services2() {
               <h3 className="text-sm sm:text-lg font-semibold text-gray-900 mb-2 leading-tight">
                 {t("home.service.service3")}
               </h3>
-              <div className="flex justify-end mt-4 sm:mt-6">
-                <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 text-gray-400" />
-              </div>
             </div>
 
             {/* Private monitoring & suggestions */}
@@ -94,9 +86,6 @@ export default function Services2() {
               <h3 className="text-sm sm:text-lg font-semibold text-gray-900 mb-2 leading-tight">
                 {t("home.service.service4")}
               </h3>
-              <div className="flex justify-end mt-4 sm:mt-6">
-                <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 text-gray-400" />
-              </div>
             </div>
 
             {/* Affordable prices with discount - spans 2 columns */}
@@ -107,9 +96,6 @@ export default function Services2() {
               <h3 className="text-sm sm:text-lg font-semibold text-gray-900 mb-2 leading-tight">
                 {t("home.service.service5")}
               </h3>
-              <div className="flex justify-end mt-4 sm:mt-6">
-                <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 text-gray-400" />
-              </div>
             </div>
           </div>
         </div>
@@ -134,9 +120,6 @@ export default function Services2() {
             <h3 className="text-xl font-semibold text-gray-900 mb-2">
               {t("home.service.service1")}
             </h3>
-            <div className="flex justify-end mt-8">
-              <ArrowRight className="w-5 h-5 text-gray-400" />
-            </div>
           </div>
 
           {/* More than +20 categories */}
@@ -147,9 +130,6 @@ export default function Services2() {
             <h3 className="text-xl font-semibold text-gray-900 mb-2">
               {t("home.service.service2")}
             </h3>
-            <div className="flex justify-end mt-8">
-              <ArrowRight className="w-5 h-5 text-gray-400" />
-            </div>
           </div>
 
           {/* Empty space */}
@@ -163,9 +143,6 @@ export default function Services2() {
             <h3 className="text-xl font-semibold text-gray-900 mb-2">
               {t("home.service.service3")}
             </h3>
-            <div className="flex justify-end mt-8">
-              <ArrowRight className="w-5 h-5 text-gray-400" />
-            </div>
           </div>
 
           {/* Private monitoring & suggestions */}
@@ -176,9 +153,6 @@ export default function Services2() {
             <h3 className="text-xl font-semibold text-gray-900 mb-2">
               {t("home.service.service4")}
             </h3>
-            <div className="flex justify-end mt-8">
-              <ArrowRight className="w-5 h-5 text-gray-400" />
-            </div>
           </div>
 
           {/* Affordable prices with discount */}
@@ -189,20 +163,16 @@ export default function Services2() {
             <h3 className="text-xl font-semibold text-gray-900 mb-2">
               {t("home.service.service5")}
             </h3>
-            <div className="flex justify-end mt-8">
-              <ArrowRight className="w-5 h-5 text-gray-400" />
-            </div>
           </div>
         </div>
 
         {/* Contact Button */}
         <div className="flex items-center justify-center pt-8 sm:pt-12">
-          <button className="bg-[#701919]  text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full flex items-center gap-3 font-medium transition-colors shadow-lg hover:shadow-xl text-sm sm:text-base">
-            Contact Us
-            <div className="w-6 h-6 sm:w-8 sm:h-8 bg-white rounded-full flex items-center justify-center">
-              <ArrowRight className="w-3 h-3 sm:w-4 sm:h-4 text-[#701919]" />
-            </div>
-          </button>
+          <Link to="/contact">
+            <button className="bg-gradient-to-r from-[#701919] to-[#D1863C] text-white font-semibold px-8 py-3 rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+              Contact Us
+            </button>
+          </Link>
         </div>
       </div>
     </section>

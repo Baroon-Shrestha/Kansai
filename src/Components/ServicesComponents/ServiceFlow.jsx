@@ -2,166 +2,153 @@ import React from "react";
 
 const steps = [
   {
-    title: "Free Counseling",
+    title: "Step 1: Free Counseling",
     description:
-      "Get personalized guidance from our expert counselors who understand your career goals. We'll assess your skills and match you with the best opportunities in Japan.",
+      "Start with a one-on-one session where we understand your goals and explain the pathways to study or work in Japan.",
     icon: "💬",
-    color: "from-blue-500 to-blue-600",
+    gradient: "from-blue-500 to-purple-600",
+    bgColor: "bg-blue-50",
+    borderColor: "border-blue-200",
   },
   {
-    title: "Language Training",
+    title: "Step 2: Language Enrollment",
     description:
-      "Master essential Japanese language skills through our comprehensive training program. Our courses are designed specifically for workplace communication and daily life.",
+      "Enroll in our Japanese language classes tailored for JLPT, daily communication, and embassy compliance.",
     icon: "📚",
-    color: "from-green-500 to-green-600",
+    gradient: "from-green-500 to-teal-600",
+    bgColor: "bg-green-50",
+    borderColor: "border-green-200",
   },
   {
-    title: "Documentation & Visa",
+    title: "Step 3: Documentation Support",
     description:
-      "We handle all your paperwork and visa applications with precision. Our experienced team ensures your documents meet all requirements for a smooth process.",
+      "We help collect, verify, and format your academic and financial documents for school and visa applications.",
     icon: "📄",
-    color: "from-purple-500 to-purple-600",
+    gradient: "from-yellow-500 to-orange-600",
+    bgColor: "bg-yellow-50",
+    borderColor: "border-yellow-200",
   },
   {
-    title: "Embassy Preparation",
+    title: "Step 4: Visa Application",
     description:
-      "Prepare confidently for your embassy interview with our mock sessions. We provide you with all the tips and practice you need to succeed.",
+      "Once your Certificate of Eligibility (CoE) is issued, we assist with visa forms, embassy appointment, and submission.",
     icon: "🏢",
-    color: "from-red-500 to-red-600",
+    gradient: "from-red-500 to-pink-600",
+    bgColor: "bg-red-50",
+    borderColor: "border-red-200",
   },
   {
-    title: "Departure & Arrival",
+    title: "Step 5: Departure Preparation",
     description:
-      "From airport assistance to your first day in Japan, we're with you every step. Our support team ensures a comfortable transition to your new life.",
+      "We help with flight booking, travel tips, and post-arrival planning so you're fully prepared for life in Japan.",
     icon: "✈️",
-    color: "from-indigo-500 to-indigo-600",
+    gradient: "from-indigo-500 to-blue-600",
+    bgColor: "bg-indigo-50",
+    borderColor: "border-indigo-200",
   },
   {
-    title: "Post-arrival Job Support",
+    title: "Step 6: Post-Arrival Support",
     description:
-      "Continue receiving support even after you arrive in Japan. We help with job placement, workplace integration, and ongoing career development.",
+      "After arrival, we stay connected—helping with job search, housing, and adjusting to life and culture in Japan.",
     icon: "💼",
-    color: "from-orange-500 to-orange-600",
+    gradient: "from-purple-500 to-pink-600",
+    bgColor: "bg-purple-50",
+    borderColor: "border-purple-200",
   },
 ];
 
 export default function ServiceFlow() {
   return (
-    <section className="py-16 bg-gray-100 px-6 relative overflow-hidden">
-      <div className="max-w-6xl mx-auto relative z-10">
-        <div className="mb-4 text-center">
-          <span className="text-[#701919] font-medium text-sm tracking-wide uppercase">
-            WorkFlow
-          </span>
-        </div>
-        <h2 className="text-3xl md:text-4xl font-bold text-red-800 mb-8 md:mb-16 text-center">
-          How We Work?
-        </h2>
+    <div className="min-h-screen  py-16 px-4 mx-6 my-12">
+      <div className="bg-[#FFF8F0] pt-20 rounded-4xl">
+        <div className="max-w-6xl mx-auto">
+          {/* Header Section */}
+          <div className="text-center mb-16">
+            <div className="mb-4 text-center">
+              <span className="text-[#701919] font-medium text-sm tracking-wide uppercase">
+                Our Expertise
+              </span>
+            </div>
+            <h1 className="text-5xl font-bold  mb-4">
+              Our{" "}
+              <span className="bg-gradient-to-br from-[#701919] to-[#D1863C] bg-clip-text text-transparent">
+                Workflow
+              </span>
+            </h1>
+            <p className="text-xl text-gray-600 max-w-3xl text-center mx-auto leading-relaxed font-extralight">
+              A structured process designed to guide you smoothly from
+              consultation to your successful journey to Japan.
+            </p>
+            <div className="w-24 h-1 bg-gradient-to-br from-[#701919] to-[#D1863C] mx-auto mt-6 rounded-full"></div>
+          </div>
 
-        {/* Mobile/Tablet Layout - Vertical */}
-        <div className="lg:hidden relative">
-          {/* Vertical connecting line */}
-          <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-orange-500 to-red-800"></div>
-
-          <div className="space-y-8">
+          {/* Steps Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {steps.map((step, index) => (
-              <div key={index} className="relative pl-20">
-                {/* Step number circle */}
-                <div className="absolute left-0 top-0">
-                  <div className="w-16 h-16 rounded-full bg-gradient-to-br from-orange-500 to-orange-600 text-white flex items-center justify-center font-bold text-lg shadow-lg border-4 border-white">
-                    {index + 1}
-                  </div>
+              <div
+                key={index}
+                className={`group relative ${step.bgColor} ${step.borderColor} border-2 rounded-3xl p-8 shadow-md hover:shadow-lg transition-all duration-300 hover:scale-[1.03] cursor-pointer overflow-hidden`}
+              >
+                {/* Background Pattern */}
+                <div className="absolute inset-0 opacity-5">
+                  <div className="absolute top-0 right-0 w-32 h-32 bg-white rounded-full transform translate-x-8 -translate-y-8"></div>
+                  <div className="absolute bottom-0 left-0 w-24 h-24 bg-white rounded-full transform -translate-x-6 translate-y-6"></div>
                 </div>
 
-                {/* Step card */}
-                <div className="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 p-6 border-l-4 border-orange-500">
-                  <div className="flex items-center gap-3 mb-3">
-                    <span className="text-2xl">{step.icon}</span>
-                    <h3 className="text-xl font-semibold text-red-800">
-                      {step.title}
-                    </h3>
+                {/* Step Number */}
+                <div
+                  className={`absolute top-4 right-4 w-8 h-8 bg-gradient-to-r ${step.gradient} rounded-full flex items-center justify-center text-white font-bold text-sm shadow-md`}
+                >
+                  {index + 1}
+                </div>
+
+                {/* Content */}
+                <div className="relative z-10">
+                  {/* Icon */}
+                  <div className="mb-6 transition-transform duration-300 ease-in-out group-hover:scale-105">
+                    <div
+                      className={`w-16 h-16 bg-gradient-to-r ${step.gradient} rounded-2xl flex items-center justify-center text-2xl shadow-md`}
+                    >
+                      {step.icon}
+                    </div>
                   </div>
-                  <p className="text-gray-600 leading-relaxed">
+
+                  {/* Title */}
+                  <h3 className="text-xl font-semibold text-gray-800 mb-4 transition-colors duration-300 group-hover:text-[#333]">
+                    {step.title}
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed transition-colors duration-300 group-hover:text-gray-700">
                     {step.description}
                   </p>
                 </div>
+
+                {/* Connecting Lines for larger screens */}
+                {index < steps.length - 1 && (
+                  <div className="hidden lg:block absolute top-1/2 -right-4 w-8 h-0.5 bg-gradient-to-r from-gray-300 to-transparent transform -translate-y-1/2 z-20">
+                    <div className="absolute right-0 top-1/2 w-2 h-2 bg-gray-400 rounded-full transform -translate-y-1/2"></div>
+                  </div>
+                )}
               </div>
             ))}
           </div>
         </div>
 
-        {/* Desktop Layout - Original Design */}
-        <div className="hidden lg:block relative">
-          {/* Top row - steps 1, 2, 3 */}
-          <div className="grid grid-cols-3 gap-8 mb-24 relative">
-            {/* Horizontal connecting line for top row */}
-            <div className="absolute top-1/2 left-0 right-0 h-0.5 bg-gradient-to-r from-orange-500 to-red-800 z-0"></div>
-
-            {steps.slice(0, 3).map((step, index) => (
-              <div key={index} className="relative">
-                {/* Step card */}
-                <div className="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 p-6 border-l-4 border-orange-500 relative z-10">
-                  <div className="flex items-center gap-3 mb-3">
-                    <span className="text-2xl">{step.icon}</span>
-                    <h3 className="text-xl font-semibold text-red-800">
-                      {step.title}
-                    </h3>
-                  </div>
-                  <p className="text-gray-600 leading-relaxed">
-                    {step.description}
-                  </p>
-                </div>
-
-                {/* Step number circle */}
-                <div className="absolute -top-8 right-0 transform -translate-x-1/2 z-20">
-                  <div className="w-16 h-16 rounded-full bg-white flex items-center justify-center font-extrabold text-2xl shadow-lg ">
-                    {index + 1}
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          {/* Vertical connecting line from step 3 to step 4 */}
-          <div className="absolute right-1/6 top-52 w-0.5 h-30 bg-gradient-to-b from-red-800 to-orange-500 transform translate-x-1/2"></div>
-
-          {/* Bottom row - steps 6, 5, 4 (reversed order) */}
-          <div className="grid grid-cols-3 gap-8 relative">
-            {/* Horizontal connecting line for bottom row */}
-            <div className="absolute top-1/2 left-0 right-0 h-0.5 bg-gradient-to-l from-orange-500 to-red-800 z-0"></div>
-
-            {steps
-              .slice(3, 6)
-              .reverse()
-              .map((step, index) => {
-                const originalIndex = 5 - index; // Calculate original step number
-                return (
-                  <div key={originalIndex} className="relative">
-                    {/* Step card */}
-                    <div className="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 p-6 border-l-4 border-orange-500 relative z-10">
-                      <div className="flex items-center gap-3 mb-3">
-                        <span className="text-2xl">{step.icon}</span>
-                        <h3 className="text-xl font-semibold text-red-800">
-                          {step.title}
-                        </h3>
-                      </div>
-                      <p className="text-gray-600 leading-relaxed">
-                        {step.description}
-                      </p>
-                    </div>
-
-                    {/* Step number circle */}
-                    <div className="absolute -top-8 right-0 transform -translate-x-1/2 z-20">
-                      <div className="w-16 h-16 rounded-full bg-white flex items-center justify-center font-extrabold text-2xl shadow-lg ">
-                        {originalIndex + 1}
-                      </div>
-                    </div>
-                  </div>
-                );
-              })}
+        {/* Bottom CTA */}
+        <div className="text-center mt-16">
+          <div className="bg-white rounded-2xl p-8 shadow-xl border border-gray-100">
+            <h3 className="text-2xl font-bold text-gray-800 mb-4">
+              Ready to Start Your Journey?
+            </h3>
+            <p className="text-gray-600 mb-6">
+              Take the first step towards your dream of studying or working in
+              Japan.
+            </p>
+            <button className="bg-gradient-to-r from-[#701919] to-[#D1863C] text-white font-semibold px-8 py-3 rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+              Get Started Today
+            </button>
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 }

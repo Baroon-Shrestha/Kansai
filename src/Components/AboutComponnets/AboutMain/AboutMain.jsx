@@ -7,9 +7,7 @@ export default function AboutMain() {
     <>
       <HeroSection
         title="About Kansai"
-        subtitle="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque,
-            accusamus. Earum neque quisquam ducimus dolorum adipisci amet
-            tempore quae labore."
+        subtitle="At Kansai, we empower individuals with quality training and global career guidance. Our experienced team offers personalized support to help you make informed decisions and succeed overseas."
         bgImage={AboutHero}
         current="About"
       />

@@ -9,6 +9,8 @@ import {
   Twitter,
 } from "lucide-react";
 import logo from "../assets/logo.png";
+import { Link } from "react-router-dom";
+
 export default function Footer() {
   const handleCallClick = () => {
     window.open("tel:+977-98XXXXXXXX", "_self");
@@ -27,6 +29,13 @@ export default function Footer() {
     };
     window.open(urls[platform], "_blank");
   };
+
+  const quickLinks = [
+    { name: "About Us", path: "/about" },
+    { name: "Services", path: "/services" },
+    { name: "Gallery", path: "/gallery" },
+    { name: "Contact Us", path: "/contact" },
+  ];
 
   return (
     <div className="relative bg-gradient-to-br from-slate-800 via-slate-900 to-slate-800">
@@ -81,13 +90,12 @@ export default function Footer() {
                 </div>
                 <div className="flex flex-col items-start">
                   Kansai International
-                  <span className=" ">Japanese Language Center</span>
+                  <span className=" "> Language Center</span>
                 </div>
               </h3>
               <p className="text-gray-300 leading-relaxed mb-6">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Voluptates animi neque deleniti numquam dolore molestias, est
-                dolores. Minus, nulla et.
+                Embark on a journey of authentic learning that bridges you to
+                Japan’s timeless traditions and vibrant cultural essence.
               </p>
 
               {/* Social Media */}
@@ -119,16 +127,17 @@ export default function Footer() {
                 Quick Links
               </h4>
               <ul className="space-y-3">
-                {["About Us", "Services", "Preparation", "Gallery"].map(
-                  (link) => (
-                    <li key={link}>
-                      <button className="text-gray-300 hover:text-orange-400 transition-colors duration-300 text-left group flex items-center gap-2">
-                        <span className="w-1 h-1 bg-orange-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
-                        {link}
-                      </button>
-                    </li>
-                  )
-                )}
+                {quickLinks.map((link) => (
+                  <li key={link.name}>
+                    <Link
+                      to={link.path}
+                      className="text-gray-300 hover:text-orange-400 transition-colors duration-300 text-left group flex items-center gap-2"
+                    >
+                      <span className="w-1 h-1 bg-orange-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+                      {link.name}
+                    </Link>
+                  </li>
+                ))}
                 ``
               </ul>
             </div>

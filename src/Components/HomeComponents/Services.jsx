@@ -16,7 +16,7 @@ export default function Services() {
   };
 
   return (
-    <div className="py-20" ref={sectionRef}>
+    <div className="py-20 bg-[#FFF8F0] rounded-4xl mx-6" ref={sectionRef}>
       <div className="container mx-auto">
         <motion.div
           className="mb-4 text-center"
@@ -39,9 +39,9 @@ export default function Services() {
             Our services
           </div>
           <div className="text-base sm:text-lg font-extralight max-w-3xl text-center">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. A
-            voluptatibus temporibus rerum vitae ipsam delectus consequatur
-            laboriosam recusandae maiores quas!
+            Kansai offers a complete range of services tailored to guide
+            individuals at every step of their journey to Japan — from
+            consultation to placement.
           </div>
         </motion.div>
       </div>

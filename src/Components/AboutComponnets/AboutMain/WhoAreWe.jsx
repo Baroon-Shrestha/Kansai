@@ -17,12 +17,12 @@ export default function WhoAreWe() {
     {
       title: "Our Aim",
       content:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam est obcaecati reiciendis? Aperiam, esse, repellendus necessitatibus id perferendis hic facilis velit nisi rem nostrum fugiat, autem minima molestias illum voluptatem.",
+        "At Kansai, our aim is to become a trusted gateway for individuals seeking education, training, and employment in Japan. We are committed to delivering quality services that prepare clients for global success while maintaining integrity, professionalism, and client satisfaction at every step.",
     },
     {
       title: "Our Objective",
       content:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error doloremque, deserunt praesentium harum repudiandae dolorem sint consequuntur nostrum consequatur quod earum eligendi, exercitationem qui vero voluptate iusto a delectus aliquid!",
+        "At Kansai, our objective is to empower individuals for successful careers in Japan through expert guidance, language training, and cultural preparation. We ensure ethical, transparent support in visa processing and documentation, while building strong partnerships with Japanese institutions to create meaningful opportunities for our clients",
     },
     {
       title: "Proven Track Record",
@@ -98,12 +98,11 @@ export default function WhoAreWe() {
           }`}
         >
           <p className="max-w-4xl text-center text-lg font-extralight">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi
-            animi perferendis debitis. Deserunt, vitae laboriosam suscipit sequi
-            voluptates asperiores molestiae dolores, illum quae sapiente eius,
-            pariatur aliquid facilis sed aliquam! Error ratione doloribus minus
-            eaque iure laborum sunt modi voluptatum rem, aut dolor maxime fugiat
-            dolores laboriosam non. Minima, incidunt.
+            <b className="font-bolder"> Kansai International Language Center</b>{" "}
+            is committed to guiding individuals toward educational and career
+            opportunities in Japan. With a focus on integrity, personalized
+            support, and cultural understanding, we bridge the gap between
+            ambition and achievement.
           </p>
         </div>
 

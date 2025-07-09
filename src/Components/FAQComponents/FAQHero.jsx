@@ -8,9 +8,7 @@ export default function FAQHero() {
       <div className="max-h-[50vh]">
         <HeroSection
           title="Frequently Asked Questions"
-          subtitle="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque,
-            accusamus. Earum neque quisquam ducimus dolorum adipisci amet
-            tempore quae labore."
+          subtitle="Find answers to common queries about our services, training programs, and the process of studying or working in Japan."
           bgImage={FaqImg}
           current="FAQ"
         />

@@ -17,7 +17,7 @@ export default function HomePage() {
       <Intro />
       {/* <Services /> */}
       <Services2 />
-      <NewSection />
+      {/* <NewSection /> */}
       <WhytoChooseUs />
       {/* <Scroll /> */}
       {/* <Team /> */}

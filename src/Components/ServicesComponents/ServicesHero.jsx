@@ -7,9 +7,7 @@ export default function ServicesHero() {
     <>
       <HeroSection
         title="Our Services"
-        subtitle=" Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque,
-            accusamus. Earum neque quisquam ducimus dolorum adipisci amet
-            tempore quae labore."
+        subtitle="Explore our comprehensive support for language training, career guidance, and study opportunities in Japan."
         bgImage={ServiceImg}
         current="Services"
       />

@@ -83,15 +83,15 @@ function AnimatedCard({ item, index, delay = 0 }) {
     >
       <div className="group relative">
         <div
-          className={`relative bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 border border-gray-100 overflow-hidden`}
+          className={`relative bg-white rounded-3xl p-8 shadow-md hover:shadow-lg transition-all duration-300 hover:translate-y-1 border border-gray-100 overflow-hidden`}
         >
           <div
-            className={`absolute inset-0 bg-gradient-to-br ${item.gradient} opacity-0 group-hover:opacity-5 transition-opacity duration-500 rounded-3xl`}
+            className={`absolute inset-0 bg-gradient-to-br ${item.gradient} opacity-0 group-hover:opacity-5 transition-opacity duration-300 rounded-3xl`}
           ></div>
 
           <div className="relative mb-6">
             <div
-              className={`inline-flex p-4 rounded-2xl bg-gradient-to-br ${item.gradient} shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-110`}
+              className={`inline-flex p-4 rounded-2xl bg-gradient-to-br ${item.gradient} shadow-md group-hover:shadow-lg transition duration-300`}
             >
               <svg
                 className="w-8 h-8 text-white"
@@ -153,7 +153,7 @@ function AnimatedCard({ item, index, delay = 0 }) {
                       />
                     </svg>
                   </div>
-                  <p className="text-gray-700 leading-relaxed font-medium group-hover/point:text-gray-800 transition-colors duration-200">
+                  <p className="text-gray-700 leading-relaxed font-medium group-hover/point:text-gray-800 transition-colors duration-300">
                     {point}
                   </p>
                 </div>
@@ -180,10 +180,6 @@ function AnimatedDescription({ description, index, delay = 0 }) {
       <div className="bg-gradient-to-br from-gray-50 to-white rounded-2xl p-8 border border-gray-100 shadow-lg hover:shadow-xl transition-all duration-300">
         <div className="text-gray-700 leading-relaxed">
           <p className="text-lg font-medium mb-0">{description}</p>
-        </div>
-        <div className="mt-6 flex items-center gap-2 text-sm text-gray-500">
-          <div className="w-2 h-2 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full"></div>
-          <span>Comprehensive Support</span>
         </div>
       </div>
     </div>
@@ -232,7 +228,7 @@ function StatsSection() {
   return (
     <div
       ref={ref}
-      className={`transform transition-all duration-1000 ease-out ${
+      className={`max-w-5xl transform transition-all duration-1000 ease-out ${
         hasAnimated ? "translate-y-0 opacity-100" : "translate-y-12 opacity-0"
       }`}
     >
@@ -240,7 +236,7 @@ function StatsSection() {
         <div className="grid md:grid-cols-3 gap-8 text-center">
           {stats.map((stat, idx) => (
             <div key={idx} className="group">
-              <div className="text-4xl md:text-5xl font-bold text-white mb-2 group-hover:scale-110 transition-transform duration-300">
+              <div className="text-3xl md:text-3xl font-bold text-white mb-2 group-hover:scale-110 transition-transform duration-300">
                 {stat.number}
               </div>
               <div className="text-gray-300 font-medium uppercase tracking-wider">
@@ -291,7 +287,9 @@ export default function DetailedServiceBreakdown() {
           ))}
         </div>
 
-        <StatsSection />
+        <div className="flex items-center justify-center">
+          <StatsSection />
+        </div>
       </div>
     </section>
   );

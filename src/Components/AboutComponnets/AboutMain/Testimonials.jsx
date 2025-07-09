@@ -12,7 +12,7 @@ const data = [
   {
     name: "Aayush Tamang",
     feedback:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam ea quibusdam iusto dolore deleniti, nam repellat vitae repudiandae libero. Consectetur mollitia esse saepe, nisi debitis rerum quae magni rem dolor blanditiis nemo non? Ipsum tempora,?",
+      "Kansai Int’l Language Center provided me with excellent Japanese language training and cultural guidance that truly prepared me for my studies and life in Japan. ?",
     rating: 5,
     location: "Tokyo, Japan",
     course: "Computer Science",
@@ -23,7 +23,7 @@ const data = [
   {
     name: "Rashmi Karki",
     feedback:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate eveniet iure totam sapiente cumque ea modi doloribus dignissimos, exercitationem necessitatibus fuga? Inventore provident dolor consectetur adipisicing elit. Cupiditate eveniet iure totam sapiente cumque ea modi doloribus dignissimos.",
+      "My experience with Kansai Int’l Language Center was outstanding. Their expert language training and cultural workshops gave me the confidence to pursue my education in Japan. The team’s guidance throughout the admission and visa process was clear and reassuring, making my transition hassle-free. I’m grateful for their dedicated support and highly recommend their services.",
     rating: 4,
     location: "Osaka, Japan",
     course: "Business Administration",
@@ -34,13 +34,57 @@ const data = [
   {
     name: "Sagar Thapa",
     feedback:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis, maiores similique inventore deserunt delectus libero assumenda, placeat expedita magni quaerat illum blanditiis dolor consectetur adipisicing elit. Perspiciatis, maiores similique inventore deserunt delectus libero assumenda.",
+      "Kansai Int’l Language Center played a vital role in my successful move to Japan. Their comprehensive language courses and cultural orientation prepared me well for both academic and daily life challenges",
     rating: 5,
     location: "Kyoto, Japan",
     course: "Engineering",
     avatar:
       "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face",
     year: "2024",
+  },
+  {
+    name: "Anjali Bista",
+    feedback:
+      "From the first counseling session to my arrival in Japan, Kansai Int’l Language Center provided continuous support. Their JLPT classes were well-structured, and the pre-departure sessions helped me adapt quickly once I landed. I’m thankful for their commitment to student success.",
+    rating: 5,
+    location: "Nagoya, Japan",
+    course: "Hospitality Management",
+    avatar:
+      "https://images.unsplash.com/photo-1607746882042-944635dfe10e?w=150&h=150&fit=crop&crop=face",
+    year: "2024",
+  },
+  {
+    name: "Prakash Shrestha",
+    feedback:
+      "Kansai made the entire journey smooth and stress-free. They not only helped me improve my language skills but also ensured my documents and visa were handled properly. I couldn’t have done it without their dedicated support.",
+    rating: 4,
+    location: "Fukuoka, Japan",
+    course: "Automotive Technology",
+    avatar:
+      "https://images.unsplash.com/photo-1527980965255-d3b416303d12?w=150&h=150&fit=crop&crop=face",
+    year: "2023",
+  },
+  {
+    name: "Sneha Lama",
+    feedback:
+      "What stood out to me about Kansai was their personal approach. They truly care about each student’s success. The instructors were supportive and the cultural training gave me confidence to live independently in Japan.",
+    rating: 5,
+    location: "Sapporo, Japan",
+    course: "Nursing",
+    avatar:
+      "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=150&h=150&fit=crop&crop=face",
+    year: "2024",
+  },
+  {
+    name: "Bibek Gurung",
+    feedback:
+      "Kansai Int’l Language Center offered exactly what I needed—quality education, visa guidance, and real-life preparation. I highly recommend their services to anyone planning to study or work in Japan.",
+    rating: 5,
+    location: "Yokohama, Japan",
+    course: "Information Technology",
+    avatar:
+      "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150&h=150&fit=crop&crop=face",
+    year: "2023",
   },
 ];
 
@@ -100,7 +144,7 @@ export default function Testimonials() {
   };
 
   return (
-    <section className="relative py-24 px-6 overflow-hidden bg-gradient-to-br from-gray-50 via-white to-gray-100">
+    <section className="relative py-24 px-6 overflow-hidden">
       {/* Background decorative elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-40 -right-40 w-80 h-80 bg-[#701919] opacity-5 rounded-full blur-3xl"></div>
@@ -113,7 +157,7 @@ export default function Testimonials() {
           {/* Heading section */}
           <div className="flex-1 text-left">
             <div className="mb-4">
-              <span className="inline-block bg-gradient-to-r from-[#701919] to-[#D1863C] text-white px-4 py-2 rounded-full text-sm font-medium tracking-wide uppercase shadow-lg">
+              <span className="text-[#701919] font-medium text-sm tracking-wide uppercase">
                 Testimonials
               </span>
             </div>
@@ -121,7 +165,7 @@ export default function Testimonials() {
               What Our Students Say
             </h2>
             <p className="text-gray-600 text-lg max-w-2xl leading-relaxed">
-              Discover how MOMIJI has transformed dreams into reality for
+              Discover how KANSAI has transformed dreams into reality for
               students pursuing their education in Japan.
             </p>
           </div>

@@ -23,7 +23,7 @@ export default function WhyChooseUs() {
   const { t } = useTranslation();
   const reasons = t("home.why.whychoose", { returnObjects: true });
   return (
-    <section className="py-20 bg-[#FFF8F0] px-6 rounded-4xl mx-6">
+    <section className="py-20  px-6 rounded-4xl mx-6">
       <div className="max-w-7xl mx-auto text-center">
         <div className="mb-4 text-center">
           <span className="text-[#701919] font-medium text-sm tracking-wide uppercase">

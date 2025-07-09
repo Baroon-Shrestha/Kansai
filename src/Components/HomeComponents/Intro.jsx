@@ -38,10 +38,11 @@ export default function Intro() {
         >
           {/* First paragraph */}
           <p className="text-base sm:text-lg md:text-xl font-bolder text-justify text-gray-700 mb-6">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente,
-            nesciunt, eos iusto velit accusamus officia quidem, adipisci illo
-            fugiat amet at quia! Rerum sunt dicta totam aspernatur, repellat
-            repudiandae aliquam.
+            <b>Kansai International Langauge center</b> is dedicated to bridging
+            the gap between aspirations and opportunities. We specialize in
+            guiding students, professionals, and trainees toward a successful
+            career in Japan by offering tailored language training, document
+            support, and visa-process assistance — all under one roof.
           </p>
 
           {/* Content with floating image */}
@@ -63,25 +64,21 @@ export default function Intro() {
             {/* Mission text that wraps around image */}
             <div className="text-base sm:text-lg md:text-xl font-bolder text-justify text-gray-700">
               <p className="mb-4">
-                <b>Our mission</b> Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Asperiores saepe, temporibus ut eligendi
-                reiciendis consectetur rerum incidunt, ex totam voluptas
-                reprehenderit. Voluptatem adipisci quae deserunt alias sed! Ab
-                sed fugit corporis voluptatem magnam modi, laborum quisquam
-                dicta est porro? Molestias corporis laboriosam ducimus, et neque
-                non, adipisci repellat debitis similique consequuntur enim
-                consectetur, est fugit sunt incidunt accusantium minus explicabo
-                tempora cumque blanditiis ea ratione magnam velit eius.
+                At Kansai, <b>Our aim</b> is to become a trusted gateway for
+                individuals seeking education, training, and employment in
+                Japan. We are committed to delivering quality services that
+                prepare clients for global success while maintaining integrity,
+                professionalism, and client satisfaction at every step.
               </p>
 
               <p className="mb-6">
-                Odit obcaecati ex quisquam laboriosam exercitationem tempora quo
-                ipsum amet ad voluptatibus corporis facere quasi voluptates,
-                officia asperiores deleniti similique a, minus totam eaque
-                debitis! Tenetur, amet iure. Rerum minima harum inventore? Lorem
-                ipsum dolor sit amet consectetur adipisicing elit. Vel, quidem.
-                Ducimus corporis exercitationem tempora quo ipsum amet ad
-                voluptatibus.
+                From our expert counseling sessions to our structured language
+                programs and document handling, every service is designed to
+                simplify your journey abroad. Our team ensures each student is
+                fully prepared — academically, culturally, and emotionally — to
+                thrive in the Japanese environment. With years of experience and
+                a network of reliable institutions, Kansai stands by you from
+                your first inquiry to your final departure.
               </p>
 
               {/* Clear float for the call-to-action */}
