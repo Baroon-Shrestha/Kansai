@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import school from "../../../assets/school.jpg";
+import school from "../../../assets/Images/school.jpg";
 import CircularText from "../../HelperComponents/CircularText";
 
 export default function WhoAreWe() {

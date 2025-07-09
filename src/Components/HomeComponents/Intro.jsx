@@ -1,5 +1,5 @@
 import React from "react";
-import img1 from "../../assets/school.jpg";
+import img1 from "../../assets/Images/school.jpg";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { useTranslation } from "react-i18next";

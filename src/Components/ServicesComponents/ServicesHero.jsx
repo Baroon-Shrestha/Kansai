@@ -1,5 +1,5 @@
 import React from "react";
-import ServiceImg from "../../assets/school.jpg";
+import ServiceImg from "../../assets/Images/school.jpg";
 import HeroSection from "../HelperComponents/HeroSection";
 
 export default function ServicesHero() {

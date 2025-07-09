@@ -1,5 +1,5 @@
 import React from "react";
-import image from "../../../assets/school.jpg";
+import image from "../../../assets/Images/school.jpg";
 
 const AimsData = [
   {

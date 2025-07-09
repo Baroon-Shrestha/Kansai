@@ -1,6 +1,6 @@
 import React from "react";
 import { BookOpen, Users, Award, Globe, Star, TrendingUp } from "lucide-react";
-import image from "../../../assets/school.jpg";
+import image from "../../../assets/Images/school.jpg";
 const skills = [
   {
     id: 1,

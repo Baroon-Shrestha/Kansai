@@ -1,5 +1,5 @@
 import React from "react";
-import AboutHero from "../../../assets/school.jpg";
+import AboutHero from "../../../assets/Images/school.jpg";
 import HeroSection from "../../HelperComponents/HeroSection";
 
 export default function AboutMain() {
