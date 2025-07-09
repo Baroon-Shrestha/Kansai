@@ -5,8 +5,8 @@ import LanguageDetector from "i18next-browser-languagedetector";
 
 // Import translations
 
-import ja from "./Locales/ja.json";
-import en from "./Locales/en.json";
+import ja from "./locales/ja.json";
+import en from "./locales/en.json";
 
 // Configure i18n
 i18n
