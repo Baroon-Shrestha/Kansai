@@ -10,7 +10,8 @@ export default function FullGallery() {
 
   // Load only image files
   const imageModules = import.meta.glob(
-    "../../assets/Images/*.{jpeg,jpg,avif,png}",
+    // "../../assets/Images/*.{jpeg,jpg,avif,png}",
+    "../../assets/Images/*.{jpeg,jpg,png}",
     { eager: true }
   );
 
